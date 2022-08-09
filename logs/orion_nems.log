@@ -1,0 +1,43 @@
+=================================================================================================================
+ Report                           Project Report for:nems         
+ Report Run:                      Tue 09 Aug 2022 06:09:00 PM  UTC
+ Report Period Beginning:         Mon 01 Aug 2022 12:00:00 AM  UTC
+ Report Period Ending:            Thu 01 Sep 2022 12:00:00 AM  UTC
+ Percentage of Period Elapsed:    28.2%                           
+ Percentage of Period Remaining:  71.8%                           
+=================================================================================================================
+ Machines:                                   orion
+ Initial Allocation in Hours:              361,694
+ Net Allocation Adjustments:                     0
+                                  ----------------
+ Adjusted Allocation:                      361,694
+                                                  
+ Core Hours Used:                           24,138
+ Windfall Core Hours Used:                       0
+                                  ----------------
+ Total Core Hours Used:                     24,138
+                                                  
+ Project Normalized Shares:               0.007511
+ Project Fair Share:                      0.773200
+ Project Rank:                               33/53
+                                                  
+ Percentage of Period Elapsed:               28.2%
+ Percentage of Period Remaining:             71.8%
+ Percentage of Allocation Used:               6.7%
+
+User                             Cr-HrUsed    Windfall   TotalUsed       %Used      Jobs
+------------------------------ ----------- ----------- ----------- ----------- ---------
+aabdolal                             3,986           0       3,986       1.10%       172
+acraig                                 651           0         651       0.18%       727
+bcurtis                              2,808           0       2,808       0.78%       176
+djovic                               4,342           0       4,342       1.20%       186
+gkyle                                   13           0          13       0.00%        20
+jongkim                              8,606           0       8,606       2.38%       338
+junwang                              3,307           0       3,307       0.91%        11
+role-nems                               30           0          30       0.01%        97
+wkolczyn                                 8           0           8       0.00%         1
+wmeng                                  386           0         386       0.11%        80
+------------------------------ ----------- ----------- ----------- ----------- ---------
+Total                               24,137           0      24,137       6.67%     1,808
+
+Total Report Runtime: 15.80 seconds (ver. 21.10.04)

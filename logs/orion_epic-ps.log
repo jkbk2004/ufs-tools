@@ -1,0 +1,38 @@
+=================================================================================================================
+ Report                           Project Report for:epic-ps      
+ Report Run:                      Tue 09 Aug 2022 06:09:34 PM  UTC
+ Report Period Beginning:         Mon 01 Aug 2022 12:00:00 AM  UTC
+ Report Period Ending:            Thu 01 Sep 2022 12:00:00 AM  UTC
+ Percentage of Period Elapsed:    28.2%                           
+ Percentage of Period Remaining:  71.8%                           
+=================================================================================================================
+ Machines:                                   orion
+ Initial Allocation in Hours:               10,192
+ Net Allocation Adjustments:                     0
+                                  ----------------
+ Adjusted Allocation:                       10,192
+                                                  
+ Core Hours Used:                           29,234
+ Windfall Core Hours Used:                       0
+                                  ----------------
+ Total Core Hours Used:                     29,234
+                                                  
+ Project Normalized Shares:               0.000212
+ Project Fair Share:                      0.000010
+ Project Rank:                               52/53
+                                                  
+ Percentage of Period Elapsed:               28.2%
+ Percentage of Period Remaining:             71.8%
+ Percentage of Allocation Used:             100.0%
+
+User                             Cr-HrUsed    Windfall   TotalUsed       %Used      Jobs
+------------------------------ ----------- ----------- ----------- ----------- ---------
+jackies                                333           0         333       3.27%       334
+kkumar                                   3           0           3       0.03%         1
+schin                                   20           0          20       0.20%         2
+ycteng                              26,521           0      26,521     100.00%       569
+zshrader                             2,357           0       2,357      23.13%        34
+------------------------------ ----------- ----------- ----------- ----------- ---------
+Total                               29,234           0      29,234     100.00%       940
+
+Total Report Runtime: 15.50 seconds (ver. 21.10.04)
