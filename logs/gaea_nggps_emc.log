@@ -1,0 +1,33 @@
+-->/usw/hpcrpt/hpcrpt/noaa-3/bin//hpcrpt.hmv.sqlite.py
+==============================================================
+
+Time of Report:  2022-08-10 11:59:48
+Project:         nggps_emc
+Host:            Gaea
+Initial allocation in Hours     1,047,273
+Net Hours Transferred In                 0
+Net Hours Transferred Out                0
+Corrections to allocation               0
+------------------------------ ----------
+Adjusted Allocation for Aug     1,047,273
+Hours Used in Aug                 252,831
+------------------------------ ----------
+Adjusted Balance                  794,442
+Percentage of Aug elapsed           31.2%
+Percentage of Allocation Used       24.1%
+
+User                     Amount     Jobs   Percentage  Windfall
+------------------------ ---------- ------ ---------- ---------
+Bin.Li                        4,787    148       0.5%         0
+Hae-Cheol.Kim               162,331     13      15.5%         0
+Jiande.Wang                     201      4       0.0%         0
+Jong.Kim                     18,762    575       1.8%         0
+Mark.Potts                    5,362    208       0.5%         0
+Xiao.Liu                     50,614      8       4.8%         0
+emc.nemspara                 10,775    321       1.0%         0
+                         ---------- ------ ---------- ---------
+                            252,831  1,277      24.1%         0
+End of statement for nggps_emc
+==============================================================
+
+
