@@ -1,0 +1,39 @@
+=================================================================================================================
+Report                           Project Report for:hfv3gfs      
+Report Run:                      Wed 10 Aug 2022 02:00:14 PM  UTC
+Report Period Beginning:         Mon 01 Aug 2022 12:00:00 AM  UTC
+Report Period Ending:            Thu 01 Sep 2022 12:00:00 AM  UTC
+Percentage of Period Elapsed:    30.9%                           
+Percentage of Period Remaining:  69.1%
+=================================================================================================================
+Machines:                                     jet
+Initial Allocation in Hours:              986,301
+Net Allocation Adjustments:                32,877
+                                 ----------------
+Adjusted Allocation:                    1,019,178
+                                                 
+Core Hours Used:                           16,169
+Windfall Core Hours Used:                       0
+                                 ----------------
+Total Core Hours Used:                     16,169
+                                                 
+Project Normalized Shares:               0.025853
+Project Fair Share:                      0.957587
+Project Rank:                               22/50
+                                                 
+Percentage of Period Elapsed:               30.9%
+Percentage of Period Remaining:             69.1%
+Percentage of Allocation Used:               1.6%
+
+User                             Cr-HrUsed    Windfall   TotalUsed       %Used      Jobs
+------------------------------ ----------- ----------- ----------- ----------- ---------
+Edward.Snyder                          719           0         719       0.07%        82
+Mark.Potts                           1,851           0       1,851       0.18%       139
+Matthew.Morin                            1           0           1       0.00%        41
+Samuel.Trahan                        2,215           0       2,215       0.22%        85
+emc.nemspara                           139           0         139       0.01%       102
+role.epic                           11,244           0      11,244       1.10%     1,388
+------------------------------ ----------- ----------- ----------- ----------- ---------
+Total                               16,169           0      16,169       1.59%     1,837
+
+Total Report Runtime: 5.87 seconds (ver. 21.10.04)

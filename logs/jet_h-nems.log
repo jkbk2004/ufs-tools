@@ -1,0 +1,36 @@
+=================================================================================================================
+Report                           Project Report for:h-nems       
+Report Run:                      Wed 10 Aug 2022 01:59:14 PM  UTC
+Report Period Beginning:         Mon 01 Aug 2022 12:00:00 AM  UTC
+Report Period Ending:            Thu 01 Sep 2022 12:00:00 AM  UTC
+Percentage of Period Elapsed:    30.9%                           
+Percentage of Period Remaining:  69.1%
+=================================================================================================================
+Machines:                                     jet
+Initial Allocation in Hours:              295,890
+Net Allocation Adjustments:                 9,863
+                                 ----------------
+Adjusted Allocation:                      305,753
+                                                 
+Core Hours Used:                           30,975
+Windfall Core Hours Used:                       0
+                                 ----------------
+Total Core Hours Used:                     30,975
+                                                 
+Project Normalized Shares:               0.007756
+Project Fair Share:                      0.685044
+Project Rank:                               33/50
+                                                 
+Percentage of Period Elapsed:               30.9%
+Percentage of Period Remaining:             69.1%
+Percentage of Allocation Used:              10.1%
+
+User                             Cr-HrUsed    Windfall   TotalUsed       %Used      Jobs
+------------------------------ ----------- ----------- ----------- ----------- ---------
+Brian.Curtis                         4,713           0       4,713       1.54%       171
+Jong.Kim                            15,783           0      15,783       5.16%       602
+emc.nemspara                        10,478           0      10,478       3.43%       290
+------------------------------ ----------- ----------- ----------- ----------- ---------
+Total                               30,974           0      30,974      10.13%     1,063
+
+Total Report Runtime: 2.78 seconds (ver. 21.10.04)
