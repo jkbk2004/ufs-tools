@@ -3,9 +3,9 @@
 set -ex
 
 # We are on NOAA Jet
-if ( ! eval module help > /dev/null 2>&1 ) ; then
-    source /apps/lmod/lmod/init/bash
-fi
+#if ( ! eval module help > /dev/null 2>&1 ) ; then
+#    source /apps/lmod/lmod/init/bash
+#fi
 
 /apps/local/bin/shpcrpt -c jet -p h-nems
 
