@@ -8,6 +8,6 @@ if ( ! eval module help > /dev/null 2>&1 ) ; then
 fi
 module purge
 
-shpcrpt -c jet -p h-nems
+/apps/local/bin/shpcrpt -c jet -p h-nems
 
-shpcrpt -c jet -p hfv3gfs
+/apps/local/bin/shpcrpt -c jet -p hfv3gfs
