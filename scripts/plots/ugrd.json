@@ -1,0 +1,29 @@
+[
+    {
+	"type":"SST",
+	"figsize":[10, 6],
+	"gridspec":[2, 4],
+	"files":["atmf024_3-1.nc"],
+	"fields":["ugrd"],
+	"grid":"grid1deg.nc",
+	"projection":"latlon",
+	"titles":["ugrd: 200mb"],
+	"title_font":10,
+	"field_range":[-5.0,1.0,5.0],
+	"field_cbar": [-5.0,1.0,5.0],
+	"cbar_label":"Temperature ($^oC$)",
+	"cmap":"bwr",
+	"transform":"ccrs.PlateCarree()",
+	"legends":["A-B"],
+	"colors": ["gray"],
+	"alpha": 0.8,
+	"fontsize": 8,
+	"title":"intel2021.2 - control: ugrd at 200hpa ",
+	"unit":"",
+	"xlabel":"Year",
+	"ylabel":"Count",
+	"range":[0,0.1],
+	"output_fig":"ugrd3-1.png"
+    }
+]
+

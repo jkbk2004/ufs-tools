@@ -1,0 +1,29 @@
+[
+    {
+	"type":"SST",
+	"figsize":[10, 6],
+	"gridspec":[2, 4],
+	"files":["iced_3-1.nc"],
+	"fields":["uvel"],
+	"grid":"sfcf024_3-1.nc",
+	"projection":"latlon",
+	"titles":["ugrd: 200mb"],
+	"title_font":10,
+	"field_range":[-0.00001,0.000005,0.00001],
+	"field_cbar": [-5.0,1.0,5.0],
+	"cbar_label":"Temperature ($^oC$)",
+	"cmap":"bwr",
+	"transform":"ccrs.PlateCarree()",
+	"legends":["A-B"],
+	"colors": ["gray"],
+	"alpha": 0.8,
+	"fontsize": 8,
+	"title":"intel2021.2 - control: SST ",
+	"unit":"",
+	"xlabel":"Year",
+	"ylabel":"Count",
+	"range":[0,0.1],
+	"output_fig":"icec.png"
+    }
+]
+
