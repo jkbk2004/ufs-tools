@@ -24,9 +24,6 @@ module load modules
 if [[ -d /opt/cray/ari/modulefiles ]] ; then
   module use -a /opt/cray/ari/modulefiles
 fi
-if [[ -d /opt/cray/pe/ari/modulefiles ]] ; then
-  module use -a /opt/cray/pe/ari/modulefiles
-fi
 if [[ -d /opt/cray/pe/craype/default/modulefiles ]] ; then
   module use -a /opt/cray/pe/craype/default/modulefiles
 fi
