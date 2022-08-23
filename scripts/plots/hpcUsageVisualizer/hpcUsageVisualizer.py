@@ -2,6 +2,7 @@ import sys
 import os
 import argparse
 from turtle import color, forward
+from xmlrpc.client import DateTime
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -16,9 +17,11 @@ Description: Read in hpc usage data from given log file directory and provide a 
 '''
 
 comArgs = argparse.ArgumentParser(
-    prog="usageVisual", description="Visualize hpc usage data.")
-comArgs.add_argument('-f', '--filepath', type=str)
-comArgs.add_argument('-o', '--output', type=str)
+    prog="HPC Usage Visualizer", description="Visualize hpc usage data.", formatter_class=argparse.MetavarTypeHelpFormatter)
+comArgs.add_argument('-f', '--filepath', type=str,
+                     help='Path to log directory')
+comArgs.add_argument(
+    '-o', '--output', type=str, help="Path to output directory")
 
 args = comArgs.parse_args()
 
@@ -31,8 +34,8 @@ xAxisFont = 20
 yAxisFont = 20
 titleFontSize = 24
 legendFontSize = 14
-plotXSize = 25
-plotYSize = 13
+plotXSize = 30
+plotYSize = 16
 plotDPI = 500
 
 filepath = args.filepath
@@ -64,6 +67,14 @@ def readLogData(filepath):
     usedCoreHrs = 'Total Core Hours Used:'
     fairShare = 'Project Fair Share:'
 
+    # gaea_nggps_emc.log has a different format
+    reportTimeEmc = 'Time of Report:'
+    accEmc = 'Project:'
+    machineEmc = 'Host:'
+    initAllocEmc = 'Initial allocation in Hours'
+    adjustAllocEmc = 'Adjusted Allocation for '
+    usedCoreHrsEmc = 'Hours Used in '
+
     data = []
 
     try:
@@ -77,33 +88,68 @@ def readLogData(filepath):
         if file.endswith('.txt') or file.endswith('.log'):
             f = open(filepath+file)
             for line in f:
-                if acc in line:
-                    tmpDct['acc'] = line[line.find(acc)+len(acc):].strip()
-                elif reportTime in line:
-                    tmpDct['endTime'] = reformatTime(line[line.find(
-                        reportTime)+len(reportTime):].strip())
+                if acc in line or accEmc in line:
+                    tmpDct['acc'] = line[line.find(
+                        acc)+len(acc):].strip() if acc in line else line[line.find(accEmc)+len(accEmc):].strip()
+                elif reportTime in line or reportTimeEmc in line:
+                    if reportTimeEmc in line:
+                        # change emc time format to mm/dd/yyyy
+                        time = line[line.find(
+                            reportTimeEmc)+len(reportTimeEmc):].split()[0].split('-')
+                        tmpDct['endTime'] = datetime.strptime(
+                            f'{time[1]} {time[2]} {time[0]}', '%m %d %Y').strftime('%m/%d/%Y')
+                    else:
+                        tmpDct['endTime'] = reformatTime(line[line.find(
+                            reportTime)+len(reportTime):].strip())
                 elif reportBeginning in line:
                     tmpDct['startTime'] = reformatTime(line[line.find(
                         reportBeginning)+len(reportBeginning):].strip())
-                elif machine in line:
+                elif machine in line or machineEmc in line:
                     tmpDct['machineID'] = line[line.find(
-                        machine)+len(machine):].strip()
-                elif initAlloc in line:
+                        machine)+len(machine):].strip() if machine in line else line[line.find(
+                            machineEmc)+len(machineEmc):].strip()
+                elif initAlloc in line or initAllocEmc in line:
                     tmpDct['initialAlloc'] = line[line.find(
-                        initAlloc)+len(initAlloc):].strip().replace(',', '')
-                elif adjustAlloc in line:
+                        initAlloc)+len(initAlloc):].strip().replace(',', '') if initAlloc in line else line[line.find(
+                            initAllocEmc)+len(initAllocEmc):].strip().replace(',', '')
+                elif adjustAlloc in line or adjustAllocEmc in line:
                     tmpDct['adjustedAlloc'] = line[line.find(
-                        adjustAlloc)+len(adjustAlloc):].strip().replace(',', '')
-                elif usedCoreHrs in line:
+                        adjustAlloc)+len(adjustAlloc):].strip().replace(',', '') if adjustAlloc in line else line[line.find(
+                            adjustAllocEmc)+len(adjustAllocEmc)+3:].strip().replace(',', '')
+                elif usedCoreHrs in line or usedCoreHrsEmc in line:
                     tmpDct['usedHrs'] = line[line.find(
-                        usedCoreHrs)+len(usedCoreHrs):].strip().replace(',', '')
+                        usedCoreHrs)+len(usedCoreHrs):].strip().replace(',', '') if usedCoreHrs in line else line[line.find(
+                            usedCoreHrsEmc)+len(usedCoreHrsEmc)+3:].strip().replace(',', '')
                 elif fairShare in line:
                     tmpDct['fairShare'] = line[line.find(
                         fairShare)+len(fairShare):].strip()
             if(len(tmpDct) == 0):
-                print('Empty/invalid log file, skipping...')
+                print(
+                    f'Empty/invalid/unrelated log file "{file}", skipping...')
             else:
                 data.append(tmpDct)
+
+    # find the differently formatted logs and provide the start date
+    for entry in data:
+        if 'startTime' not in entry.keys():
+            # cheyenne is allocated on a yearly basis in october
+            if entry['machineID'] == 'Cheyenne':
+                if int(entry['endTime'].split('/')[0]) < 10:
+                    endTime = entry['endTime'].split('/')
+                    entry['startTime'] = datetime.strptime(
+                        f'{endTime[0]} 01 {int(endTime[2])-1}', '%m %d %Y').strftime('%m/%d/%Y')
+                else:
+                    endTime = entry['endTime'].split('/')
+                    entry['startTime'] = datetime.strptime(
+                        f'{endTime[0]} 01 {endTime[2]}', '%m %d %Y').strftime('%m/%d/%Y')
+            # otherwise it's just the beginning of the month for the cycle
+            else:
+                endTime = entry['endTime'].split('/')
+                entry['startTime'] = datetime.strptime(
+                    f'{endTime[0]} 01 {endTime[2]}', '%m %d %Y').strftime('%m/%d/%Y')
+        if 'fairShare' not in entry.keys():
+            entry['fairShare'] = 0
+
     if(len(data) == 0):
         sys.exit('No data retrieved from log directory. Exiting...')
     return data
