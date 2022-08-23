@@ -10,6 +10,6 @@ module purge
 
 module load contrib noaatools
 
-shpcrpt -c orion -p nems
+shpcrpt -c orion -p nems | orion-nems.log
 
-shpcrpt -c orion -p epic-ps
+shpcrpt -c orion -p epic-ps | orion-epic-ps.log

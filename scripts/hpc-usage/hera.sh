@@ -8,4 +8,4 @@ if ( ! eval module help > /dev/null 2>&1 ) ; then
 fi
 module purge
 
-shpcrpt -c hera -p nems 
+shpcrpt -c hera -p nems | tee hera-nems.log

@@ -7,6 +7,6 @@ set -ex
 #    source /apps/lmod/lmod/init/bash
 #fi
 
-/apps/local/bin/shpcrpt -c jet -p h-nems
+/apps/local/bin/shpcrpt -c jet -p h-nems | tee jet-h-nems.log
 
-/apps/local/bin/shpcrpt -c jet -p hfv3gfs
+/apps/local/bin/shpcrpt -c jet -p hfv3gfs | tee jet-hfv3gfs.log
