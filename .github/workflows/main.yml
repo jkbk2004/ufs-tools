@@ -1,4 +1,4 @@
-name: Helpers
+name: Helpers-test
 on:
   workflow_run:
     workflows: ["Pull Request Tests"]
