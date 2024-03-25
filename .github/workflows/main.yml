@@ -33,4 +33,4 @@ jobs:
     steps:
     - name: Check up-to-dateness and post comment
       run: |
-        head_sha=${{ github.event.workflow_run.head_sha }}
+        head_sha=${{ github.event.pull_request.head.sha }}
