@@ -33,4 +33,5 @@ jobs:
     steps:
     - name: Check up-to-dateness and post comment
       run: |
+        echo $helperid
         head_sha=${{ github.event.pull_request.head.sha }}
