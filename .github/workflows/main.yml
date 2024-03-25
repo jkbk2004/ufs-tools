@@ -1,5 +1,9 @@
 name: Helpers
 on:
+  workflow_run:
+    workflows: ["Pull Request Tests"]
+    types:
+      - requested
   pull_request:
     branches: [ "main" ]
 env:
