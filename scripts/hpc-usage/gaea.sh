@@ -10,3 +10,5 @@ source /etc/opt/cray/pe/admin-pe/site-config
 module load hpcrpt
 
 hpcrpt -p nggps_emc | tee gaea-nggps_emc.log
+
+#https://docs.rdhpcs.noaa.gov/slurm/shpcrpt.html
