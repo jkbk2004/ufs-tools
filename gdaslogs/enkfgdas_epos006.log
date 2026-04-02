@@ -1,0 +1,1565 @@
++ source /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/dev/ush/load_modules.sh gsi
+++ [[ hxB == *x* ]]
+++ set_x=YES
+++ [[ NO == \N\O ]]
+++ echo 'Loading modules quietly...'
+Loading modules quietly...
+++ set +x
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+INFO: gw_gsi.ursa module not available, falling back to gw_run.ursa
+
+Currently Loaded Modules:
+  1) lmod                             40) esmf/8.8.0
+  2) intel-oneapi-compilers/2024.2.1  41) antlr/2.7.7
+  3) stack-oneapi/2024.2.1            42) gsl/2.8
+  4) intel-oneapi-mpi/2021.13.1       43) nco/5.2.4
+  5) stack-intel-oneapi-mpi/2021.13   44) bacio/2.4.1
+  6) glibc/2.34                       45) w3emc/2.10.0
+  7) intel-oneapi-runtime/2024.2.1    46) prod_util/2.1.1
+  8) zlib/1.2.13                      47) g2/3.5.1
+  9) pigz/2.8                         48) ip/5.1.0
+ 10) zstd/1.5.6                       49) grib-util/1.4.0
+ 11) tar/1.34                         50) g2tmpl/1.13.0
+ 12) gettext/0.22.5                   51) gsi-ncdiag/1.1.2
+ 13) sqlite/3.46.0                    52) crtm-fix/2.4.0.1_emc
+ 14) util-linux-uuid/2.40.2           53) git-lfs/3.5.1
+ 15) python/3.11.7                    54) crtm/2.4.0.1
+ 16) stack-python/3.11.7              55) bufr/12.1.0
+ 17) nghttp2/1.63.0                   56) py-f90nml/1.4.3
+ 18) curl/8.10.1                      57) py-certifi/2023.7.22
+ 19) cmake/3.27.9                     58) py-cftime/1.0.3.4
+ 20) libjpeg/2.1.0                    59) py-netcdf4/1.7.1.post2
+ 21) jasper/2.0.32                    60) libyaml/0.2.5
+ 22) libpng/1.6.37                    61) py-pyyaml/6.0.2
+ 23) openjpeg/2.3.1                   62) py-markupsafe/2.1.3
+ 24) eccodes/2.33.0                   63) py-jinja2/3.1.4
+ 25) intel-oneapi-mkl/2024.2.1        64) py-pytz/2023.3
+ 26) proj/9.4.1                       65) py-tzdata/2023.3
+ 27) udunits/2.2.28                   66) py-pandas/2.2.3
+ 28) cdo/2.4.4                        67) py-six/1.16.0
+ 29) hdf5/1.14.3                      68) py-python-dateutil/2.8.2
+ 30) snappy/1.2.1                     69) py-packaging/24.1
+ 31) c-blosc/1.21.5                   70) py-setuptools/69.2.0
+ 32) netcdf-c/4.9.2                   71) py-xarray/2024.7.0
+ 33) netcdf-fortran/4.6.1             72) gw_run.common
+ 34) parallel-netcdf/1.12.3           73) g2c/2.1.0
+ 35) parallelio/2.6.2                 74) wgrib2/3.6.0
+ 36) python-venv/1.0                  75) prepobs/1.1.3
+ 37) py-mpi4py/4.0.1                  76) fit2obs/1.1.10
+ 38) py-numpy/1.26.4                  77) imagemagick/7.1.1-29
+ 39) py-pip/23.1.2                    78) gw_run.ursa
+
+ 
+
+++ [[ -d /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/sorc/wxflow/src ]]
+++ PYTHONPATH=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/sorc/wxflow/src:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-xarray-2024.7.0-tg53kls/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-setuptools-69.2.0-cge4bsx/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-packaging-24.1-njbyh5r/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-python-dateutil-2.8.2-qlkqzyg/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-six-1.16.0-jkszz2g/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-pandas-2.2.3-uar3v7v/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-tzdata-2023.3-wsjtkwg/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-pytz-2023.3-cfh3tbl/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-jinja2-3.1.4-jhz55wn/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-markupsafe-2.1.3-cct5rgj/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-pyyaml-6.0.2-55i3htn/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-netcdf4-1.7.1.post2-chvc6ro/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-cftime-1.0.3.4-ljy6l3p/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-certifi-2023.7.22-5zcopi6/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-f90nml-1.4.3-7rmrgv7/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/bufr-12.1.0-dxfkpsz/lib64/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/esmf-8.8.0-hdxt3lx/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-pip-23.1.2-sjeblpd/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-numpy-1.26.4-mqxp6yv/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-mpi4py-4.0.1-plc5ydd/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/python-venv-1.0-qgjgfzk/lib/python3.11/site-packages
+++ PYTHONPATH=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/sorc/wxflow/src:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-xarray-2024.7.0-tg53kls/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-setuptools-69.2.0-cge4bsx/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-packaging-24.1-njbyh5r/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-python-dateutil-2.8.2-qlkqzyg/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-six-1.16.0-jkszz2g/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-pandas-2.2.3-uar3v7v/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-tzdata-2023.3-wsjtkwg/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-pytz-2023.3-cfh3tbl/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-jinja2-3.1.4-jhz55wn/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-markupsafe-2.1.3-cct5rgj/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-pyyaml-6.0.2-55i3htn/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-netcdf4-1.7.1.post2-chvc6ro/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-cftime-1.0.3.4-ljy6l3p/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-certifi-2023.7.22-5zcopi6/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-f90nml-1.4.3-7rmrgv7/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/bufr-12.1.0-dxfkpsz/lib64/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/esmf-8.8.0-hdxt3lx/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-pip-23.1.2-sjeblpd/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-numpy-1.26.4-mqxp6yv/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/py-mpi4py-4.0.1-plc5ydd/lib/python3.11/site-packages:/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/python-venv-1.0-qgjgfzk/lib/python3.11/site-packages:/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/python
+++ export PYTHONPATH
+++ ulimit -S -s unlimited
+++ unset ulimit_s
+++ [[ NO == \Y\E\S ]]
++ status=0
++ [[ 0 -ne 0 ]]
++ export job=epos
++ job=epos
++ export jobid=epos.2244889
++ jobid=epos.2244889
+++ echo f009
+++ sed -e 's/_/ /g; s/f/ /g; s/,/ /g'
++ fhrlst=' 009'
++ for fhr in ${fhrlst}
++ export FHMIN_EPOS=009
++ FHMIN_EPOS=009
++ export FHMAX_EPOS=009
++ FHMAX_EPOS=009
++ export FHOUT_EPOS=009
++ FHOUT_EPOS=009
++ /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/dev/jobs/JGDAS_ENKF_POST
++ source /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/jjob_header.sh -e epos -c 'base epos'
++++ basename /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/dev/jobs/JGDAS_ENKF_POST
+++ _calling_script=JGDAS_ENKF_POST
+++ source /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/err_exit.sh
++++ declare -xf err_exit
+++ OPTIND=1
+++ getopts c:e: option
+++ case "${option}" in
+++ env_job=epos
+++ getopts c:e: option
+++ case "${option}" in
+++ read -ra configs
+++ getopts c:e: option
+++ shift 4
+++ [[ -z epos ]]
+++ export EXPDIR=/scratch5/purged/Wei.Huang/run/gdas/EXPDIR/C96C48_ufs_hybatmDA
+++ EXPDIR=/scratch5/purged/Wei.Huang/run/gdas/EXPDIR/C96C48_ufs_hybatmDA
+++ for config in "${configs[@]:-''}"
+++ source /scratch5/purged/Wei.Huang/run/gdas/EXPDIR/C96C48_ufs_hybatmDA/config.base
++++ echo 'BEGIN: config.base'
+BEGIN: config.base
++++ export machine=URSA
++++ machine=URSA
++++ export RUN_ENVIR=emc
++++ RUN_ENVIR=emc
++++ export ACCOUNT=epic
++++ ACCOUNT=epic
++++ export QUEUE=batch
++++ QUEUE=batch
++++ export QUEUE_SERVICE=batch
++++ QUEUE_SERVICE=batch
++++ export QUEUE_DTN=batch
++++ QUEUE_DTN=batch
++++ export PARTITION_BATCH=u1-compute
++++ PARTITION_BATCH=u1-compute
++++ export PARTITION_SERVICE=u1-service
++++ PARTITION_SERVICE=u1-service
++++ export PARTITION_DTN=
++++ PARTITION_DTN=
++++ export RESERVATION=
++++ RESERVATION=
++++ export CLUSTERS=
++++ CLUSTERS=
++++ export CLUSTERS_SERVICE=
++++ CLUSTERS_SERVICE=
++++ export CLUSTERS_DTN=
++++ CLUSTERS_DTN=
++++ export HPSS_PROJECT=emc-global
++++ HPSS_PROJECT=emc-global
++++ export HOMEglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow
++++ HOMEglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow
++++ export EXECglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec
++++ EXECglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec
++++ export FIXglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix
++++ FIXglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix
++++ export PARMglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/parm
++++ PARMglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/parm
++++ export SCRglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/scripts
++++ SCRglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/scripts
++++ export USHglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush
++++ USHglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush
++++ export FIXam=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/am
++++ FIXam=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/am
++++ export FIXaer=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/aer
++++ FIXaer=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/aer
++++ export FIXcpl=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/cpl
++++ FIXcpl=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/cpl
++++ export FIXlut=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/lut
++++ FIXlut=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/lut
++++ export FIXcice=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/cice
++++ FIXcice=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/cice
++++ export FIXmom=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/mom6
++++ FIXmom=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/mom6
++++ export FIXreg2grb2=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/reg2grb2
++++ FIXreg2grb2=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/reg2grb2
++++ export FIXgdas=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/gdas
++++ FIXgdas=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/gdas
++++ export PACKAGEROOT=/scratch3/NCEPDEV/global/role.glopara/nwpara
++++ PACKAGEROOT=/scratch3/NCEPDEV/global/role.glopara/nwpara
++++ export COMROOT=/scratch5/purged/Wei.Huang/run/gdas/COMROOT
++++ COMROOT=/scratch5/purged/Wei.Huang/run/gdas/COMROOT
++++ export DCOMROOT=/lfs/h1/ops/prod/dcom
++++ DCOMROOT=/lfs/h1/ops/prod/dcom
++++ export COMINsyn=/scratch3/NCEPDEV/global/role.glopara/com/gfs/prod/syndat
++++ COMINsyn=/scratch3/NCEPDEV/global/role.glopara/com/gfs/prod/syndat
++++ export DMPDIR=/scratch3/NCEPDEV/global/role.glopara/dump
++++ DMPDIR=/scratch3/NCEPDEV/global/role.glopara/dump
++++ export IODADIR=/scratch3/NCEPDEV/global/role.glopara/dump_ioda
++++ IODADIR=/scratch3/NCEPDEV/global/role.glopara/dump_ioda
++++ export USE_IODADIR=YES
++++ USE_IODADIR=YES
++++ export COMINecmwf=/scratch3/NCEPDEV/global/role.glopara/data/external_gempak/ecmwf
++++ COMINecmwf=/scratch3/NCEPDEV/global/role.glopara/data/external_gempak/ecmwf
++++ export COMINnam=/scratch3/NCEPDEV/global/role.glopara/data/external_gempak/nam
++++ COMINnam=/scratch3/NCEPDEV/global/role.glopara/data/external_gempak/nam
++++ export COMINukmet=/scratch3/NCEPDEV/global/role.glopara/data/external_gempak/ukmet
++++ COMINukmet=/scratch3/NCEPDEV/global/role.glopara/data/external_gempak/ukmet
++++ export HOMEDIR=/scratch3/NAGAPE/epic/Wei.Huang/src
++++ HOMEDIR=/scratch3/NAGAPE/epic/Wei.Huang/src
++++ export STMP=/scratch5/purged/Wei.Huang/stmp/gdas
++++ STMP=/scratch5/purged/Wei.Huang/stmp/gdas
++++ export PTMP=/scratch5/purged/Wei.Huang/ptmp/gdas
++++ PTMP=/scratch5/purged/Wei.Huang/ptmp/gdas
++++ export NOSCRUB=/scratch3/NAGAPE/epic/Wei.Huang/src
++++ NOSCRUB=/scratch3/NAGAPE/epic/Wei.Huang/src
++++ export BASE_GIT=/scratch3/NCEPDEV/global/role.glopara/git
++++ BASE_GIT=/scratch3/NCEPDEV/global/role.glopara/git
++++ export BASE_DATA=/scratch3/NCEPDEV/global/role.glopara/data
++++ BASE_DATA=/scratch3/NCEPDEV/global/role.glopara/data
++++ export DO_PREP_SFC=NO
++++ DO_PREP_SFC=NO
++++ export DO_GOES=NO
++++ DO_GOES=NO
++++ export DO_BUFRSND=NO
++++ DO_BUFRSND=NO
++++ export DO_GEMPAK=NO
++++ DO_GEMPAK=NO
++++ export DO_AWIPS=NO
++++ DO_AWIPS=NO
++++ export DO_NPOESS=NO
++++ DO_NPOESS=NO
++++ export DO_TRACKER=YES
++++ DO_TRACKER=YES
++++ export DO_GENESIS=YES
++++ DO_GENESIS=YES
++++ export DO_GENESIS_FSU=NO
++++ DO_GENESIS_FSU=NO
++++ export DO_VERFOZN=YES
++++ DO_VERFOZN=YES
++++ export DO_VERFRAD=YES
++++ DO_VERFRAD=YES
++++ export DO_VMINMON=YES
++++ DO_VMINMON=YES
++++ export DO_ANLSTAT=YES
++++ DO_ANLSTAT=YES
++++ export MODE=cycled
++++ MODE=cycled
++++ export DO_TEST_MODE=NO
++++ DO_TEST_MODE=NO
++++ export FIXgsi=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/gsi
++++ FIXgsi=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/gsi
++++ export HOMEpost=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow
++++ HOMEpost=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow
++++ export HOMEobsproc=/scratch3/NCEPDEV/global/role.glopara/git/obsproc/v1.2.0
++++ HOMEobsproc=/scratch3/NCEPDEV/global/role.glopara/git/obsproc/v1.2.0
++++ export NMV=/bin/mv
++++ NMV=/bin/mv
++++ export 'NLN=/bin/ln -sf'
++++ NLN='/bin/ln -sf'
++++ export VERBOSE=YES
++++ VERBOSE=YES
++++ export DEBUG_POSTSCRIPT=NO
++++ DEBUG_POSTSCRIPT=NO
++++ export CHGRP_RSTPROD=YES
++++ CHGRP_RSTPROD=YES
++++ export 'CHGRP_CMD=chgrp rstprod'
++++ CHGRP_CMD='chgrp rstprod'
++++ export NCDUMP=/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/netcdf-c-4.9.2-idnwcbr/bin/ncdump
++++ NCDUMP=/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/netcdf-c-4.9.2-idnwcbr/bin/ncdump
++++ export NCLEN=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/getncdimlen
++++ NCLEN=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/getncdimlen
++++ export BASE_ENV=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/env
++++ BASE_ENV=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/env
++++ export SDATE=2024022318
++++ SDATE=2024022318
++++ export EDATE=2024022406
++++ EDATE=2024022406
++++ export EXP_WARM_START=.true.
++++ EXP_WARM_START=.true.
++++ export assim_freq=6
++++ assim_freq=6
++++ export PSLOT=C96C48_ufs_hybatmDA
++++ PSLOT=C96C48_ufs_hybatmDA
++++ export EXPDIR=/scratch5/purged/Wei.Huang/run/gdas/EXPDIR/C96C48_ufs_hybatmDA
++++ EXPDIR=/scratch5/purged/Wei.Huang/run/gdas/EXPDIR/C96C48_ufs_hybatmDA
++++ export ROTDIR=/scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA
++++ ROTDIR=/scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA
++++ export DUMP_SUFFIX=
++++ DUMP_SUFFIX=
++++ [[ 2024022406 -ge 2019092100 ]]
++++ [[ 2024022406 -le 2019110700 ]]
++++ export ARCDIR=/scratch3/NAGAPE/epic/Wei.Huang/src/archive/C96C48_ufs_hybatmDA
++++ ARCDIR=/scratch3/NAGAPE/epic/Wei.Huang/src/archive/C96C48_ufs_hybatmDA
++++ export ATARDIR=/NAGAPE/epic/1year/Wei.Huang/URSA/scratch/C96C48_ufs_hybatmDA
++++ ATARDIR=/NAGAPE/epic/1year/Wei.Huang/URSA/scratch/C96C48_ufs_hybatmDA
++++ export 'FETCHDIR={{ FETCHDIR }}'
++++ FETCHDIR='{{ FETCHDIR }}'
++++ export NET=gfs
++++ NET=gfs
++++ export RUN=enkfgdas
++++ RUN=enkfgdas
++++ source /scratch5/purged/Wei.Huang/run/gdas/EXPDIR/C96C48_ufs_hybatmDA/config.com
+++++ echo 'BEGIN: config.com'
+BEGIN: config.com
+++++ [[ emc == \n\c\o ]]
+++++ COM_OBSPROC_TMPL='${DMPDIR}/${RUN}${DUMP_SUFFIX}.${YMD}/${HH}/atmos'
+++++ COM_OBSFORGE_TMPL='${IODADIR}/${RUN}${DUMP_SUFFIX}.${YMD}/${HH}'
+++++ COM_RTOFS_TMPL='${DMPDIR}'
+++++ COM_TCVITAL_TMPL='${DMPDIR}/${RUN}.${YMD}/${HH}/atmos'
+++++ declare -rx 'COM_OBS_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/obs'
+++++ declare -rx COM_OBSPROC_TMPL COM_RTOFS_TMPL COM_OBSFORGE_TMPL
+++++ COM_BASE='${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}'
+++++ declare -rx 'COM_TOP_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}'
+++++ declare -rx 'COM_CONF_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/conf'
+++++ declare -rx 'COM_ATMOS_INPUT_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/atmos/input'
+++++ declare -rx 'COM_ATMOS_RESTART_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/atmos/restart'
+++++ declare -rx 'COM_ATMOS_ANALYSIS_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/analysis/atmos'
+++++ declare -rx 'COM_SNOW_ANALYSIS_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/analysis/snow'
+++++ declare -rx 'COM_SNOW_ANLMON_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/snow/anlmon'
+++++ declare -rx 'COM_ATMOS_HISTORY_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/atmos/history'
+++++ declare -rx 'COM_ATMOS_MASTER_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/atmos/master'
+++++ declare -rx 'COM_ATMOS_GRIB_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/atmos/grib2'
+++++ declare -rx 'COM_ATMOS_GRIB_GRID_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/atmos/grib2/${GRID}'
+++++ declare -rx 'COM_ATMOS_BUFR_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/atmos/bufr'
+++++ declare -rx 'COM_ATMOS_GEMPAK_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/atmos/gempak/${GRID}'
+++++ declare -rx 'COM_ATMOS_GENESIS_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/atmos/cyclone/genesis_vital'
+++++ declare -rx 'COM_ATMOS_TRACK_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/atmos/cyclone/tracks'
+++++ declare -rx 'COM_ATMOS_GOES_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/atmos/goes_sim'
+++++ declare -rx 'COM_ATMOS_IMAGERY_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/atmos/imagery'
+++++ declare -rx 'COM_ATMOS_OZNMON_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/atmos/oznmon'
+++++ declare -rx 'COM_ATMOS_RADMON_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/atmos/radmon'
+++++ declare -rx 'COM_ATMOS_MINMON_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/atmos/minmon'
+++++ declare -rx 'COM_ATMOS_ANLMON_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/atmos/anlmon'
+++++ declare -rx 'COM_ATMOS_WMO_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/atmos/wmo'
+++++ declare -rx 'COM_WAVE_RESTART_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/wave/restart'
+++++ declare -rx 'COM_WAVE_PREP_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/wave/prep'
+++++ declare -rx 'COM_WAVE_HISTORY_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/wave/history'
+++++ declare -rx 'COM_WAVE_GRID_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/wave/gridded'
+++++ declare -rx 'COM_WAVE_GRID_RES_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/wave/gridded/${GRDRESNAME}'
+++++ declare -rx 'COM_WAVE_STATION_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/wave/station'
+++++ declare -rx 'COM_WAVE_GEMPAK_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/wave/gempak'
+++++ declare -rx 'COM_WAVE_WMO_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/wave/wmo'
+++++ declare -rx 'COM_OCEAN_HISTORY_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/ocean/history'
+++++ declare -rx 'COM_OCEAN_RESTART_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/ocean/restart'
+++++ declare -rx 'COM_OCEAN_INPUT_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/ocean/input'
+++++ declare -rx 'COM_OCEAN_ANALYSIS_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/analysis/ocean'
+++++ declare -rx 'COM_OCEAN_ANLMON_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/ocean/anlmon'
+++++ declare -rx 'COM_OCEAN_LETKF_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/analysis/ocean/letkf'
+++++ declare -rx 'COM_OCEAN_BMATRIX_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/bmatrix/ocean'
+++++ declare -rx 'COM_OCEAN_NETCDF_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/ocean/netcdf'
+++++ declare -rx 'COM_OCEAN_GRIB_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/ocean/grib2'
+++++ declare -rx 'COM_OCEAN_GRIB_GRID_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/ocean/grib2/${GRID}'
+++++ declare -rx 'COM_ICE_ANALYSIS_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/analysis/ice'
+++++ declare -rx 'COM_ICE_LETKF_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/analysis/ice/letkf'
+++++ declare -rx 'COM_ICE_ANLMON_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/ice/anlmon'
+++++ declare -rx 'COM_ICE_BMATRIX_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/bmatrix/ice'
+++++ declare -rx 'COM_ICE_INPUT_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/ice/input'
+++++ declare -rx 'COM_ICE_HISTORY_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/ice/history'
+++++ declare -rx 'COM_ICE_RESTART_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/ice/restart'
+++++ declare -rx 'COM_ICE_NETCDF_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/ice/netcdf'
+++++ declare -rx 'COM_ICE_GRIB_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/ice/grib2'
+++++ declare -rx 'COM_ICE_GRIB_GRID_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/ice/grib2/${GRID}'
+++++ declare -rx 'COM_CHEM_HISTORY_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/chem/history'
+++++ declare -rx 'COM_CHEM_ANALYSIS_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/analysis/chem'
+++++ declare -rx 'COM_CHEM_BMAT_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/analysis/chem/bmatrix'
+++++ declare -rx 'COM_CHEM_ANLMON_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/products/chem/anlmon'
+++++ declare -rx 'COM_CHEM_INPUT_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/chem/input'
+++++ declare -rx 'COM_CHEM_RESTART_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/chem/restart'
+++++ declare -rx 'COM_MED_RESTART_TMPL=${ROTDIR}/${RUN}.${YMD}/${HH}/${MEMDIR}/model/med/restart'
++++ export LOGSCRIPT=
++++ LOGSCRIPT=
++++ export SENDSDM=NO
++++ SENDSDM=NO
++++ export SENDAWIP=NO
++++ SENDAWIP=NO
++++ export APP=ATM
++++ APP=ATM
++++ shopt -s extglob
++++ case "${RUN}" in
++++ APP=ATM
++++ shopt -u extglob
++++ export DO_ATM=YES
++++ DO_ATM=YES
++++ export DO_COUPLED=NO
++++ DO_COUPLED=NO
++++ export DO_WAVE=NO
++++ DO_WAVE=NO
++++ export DO_OCN=NO
++++ DO_OCN=NO
++++ export DO_ICE=NO
++++ DO_ICE=NO
++++ DO_AERO=NO
++++ export DO_PREP_OBS_AERO=NO
++++ DO_PREP_OBS_AERO=NO
++++ aero_fcst_runs=gdas
++++ aero_anl_runs='gdas gfs'
++++ export DO_AERO_FCST=NO
++++ DO_AERO_FCST=NO
++++ export DO_AERO_ANL=NO
++++ DO_AERO_ANL=NO
++++ [[ enkfgdas == \g\f\s ]]
++++ export DOBNDPNT_WAVE=NO
++++ DOBNDPNT_WAVE=NO
++++ export FRAC_GRID=.true.
++++ FRAC_GRID=.true.
++++ export DO_NEST=NO
++++ DO_NEST=NO
++++ [[ NO == \Y\E\S ]]
++++ export ntiles=6
++++ ntiles=6
++++ export FIXugwd=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/ugwd
++++ FIXugwd=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/ugwd
++++ export FIXorog=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/orog
++++ FIXorog=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/orog
++++ export OPS_RES=C768
++++ OPS_RES=C768
++++ export LEVS=128
++++ LEVS=128
++++ export CASE=C96
++++ CASE=C96
++++ export CASE_ENS=C48
++++ CASE_ENS=C48
++++ export CASE_ANL=C48
++++ CASE_ANL=C48
++++ export CASE_HIST=C96
++++ CASE_HIST=C96
++++ export OCNRES=500
++++ OCNRES=500
++++ export ICERES=500
++++ ICERES=500
++++ case "${CASE}" in
++++ export waveGRD=uglo_100km
++++ waveGRD=uglo_100km
++++ case "${APP}" in
++++ [[ NO == \Y\E\S ]]
++++ [[ enkfgdas =~ gdas ]]
++++ export FHCYC=1
++++ FHCYC=1
++++ export FTSFS=10
++++ FTSFS=10
++++ export FHMIN=0
++++ FHMIN=0
++++ export FHMAX=9
++++ FHMAX=9
++++ export FHOUT=3
++++ FHOUT=3
++++ export FHOUT_OCN=3
++++ FHOUT_OCN=3
++++ export FHOUT_ICE=3
++++ FHOUT_ICE=3
++++ export FHOUT_AERO=3
++++ FHOUT_AERO=3
++++ export EUPD_CYC=gdas
++++ EUPD_CYC=gdas
++++ export INTERVAL_GFS=24
++++ INTERVAL_GFS=24
++++ export SDATE_GFS=2024022400
++++ SDATE_GFS=2024022400
++++ export FHMIN_GFS=0
++++ FHMIN_GFS=0
++++ export FHMAX_GFS=120
++++ FHMAX_GFS=120
++++ breakpnts=
++++ export FCST_SEGMENTS=0,120
++++ FCST_SEGMENTS=0,120
++++ export FHOUT_GFS=3
++++ FHOUT_GFS=3
++++ export FHMAX_HF_GFS=48
++++ FHMAX_HF_GFS=48
++++ export FHMAX_HF_GFS=48
++++ FHMAX_HF_GFS=48
++++ export FHOUT_HF_GFS=1
++++ FHOUT_HF_GFS=1
++++ export FHMIN_WAV=0
++++ FHMIN_WAV=0
++++ export FHOUT_WAV=1
++++ FHOUT_WAV=1
++++ export FHMAX_WAV=9
++++ FHMAX_WAV=9
++++ export FHMAX_WAV=9
++++ FHMAX_WAV=9
++++ export FHOUT_WAV_GFS=3
++++ FHOUT_WAV_GFS=3
++++ export FHMAX_WAV_GFS=120
++++ FHMAX_WAV_GFS=120
++++ export FHOUT_HF_WAV=1
++++ FHOUT_HF_WAV=1
++++ export FHMAX_HF_WAV=48
++++ FHMAX_HF_WAV=48
++++ export FHMAX_HF_WAV=48
++++ FHMAX_HF_WAV=48
++++ export FHOUT_OCN_GFS=6
++++ FHOUT_OCN_GFS=6
++++ export FHOUT_ICE_GFS=6
++++ FHOUT_ICE_GFS=6
++++ export ILPOST=1
++++ ILPOST=1
++++ ((  FHMAX_HF_GFS < 120  ))
++++ export ILPOST=3
++++ ILPOST=3
++++ export FHMAX_GOES=180
++++ FHMAX_GOES=180
++++ export FHOUT_GOES=3
++++ FHOUT_GOES=3
++++ ((  FHMAX_GOES > FHMAX_GFS  ))
++++ export FHMAX_GOES=120
++++ FHMAX_GOES=120
++++ export restart_interval_gfs=12
++++ restart_interval_gfs=12
++++ export QUILTING=.true.
++++ QUILTING=.true.
++++ export OUTPUT_GRID=gaussian_grid
++++ OUTPUT_GRID=gaussian_grid
++++ export WRITE_DOPOST=.true.
++++ WRITE_DOPOST=.true.
++++ export WRITE_NSFLIP=.true.
++++ WRITE_NSFLIP=.true.
++++ export DOIAU=NO
++++ DOIAU=NO
++++ export IAUFHRS=3,6,9
++++ IAUFHRS=3,6,9
++++ export IAU_FHROT=3
++++ IAU_FHROT=3
++++ export IAU_DELTHRS=6
++++ IAU_DELTHRS=6
++++ export IAU_OFFSET=6
++++ IAU_OFFSET=6
++++ export DOIAU_ENKF=NO
++++ DOIAU_ENKF=NO
++++ export IAUFHRS_ENKF=3,6,9
++++ IAUFHRS_ENKF=3,6,9
++++ export IAU_DELTHRS_ENKF=6
++++ IAU_DELTHRS_ENKF=6
++++ export imp_physics=8
++++ imp_physics=8
++++ export DO_JEDIATMVAR=YES
++++ DO_JEDIATMVAR=YES
++++ export DO_JEDIATMENS=YES
++++ DO_JEDIATMENS=YES
++++ export DO_JEDIATMENS_SPLIT_OBSSOL=YES
++++ DO_JEDIATMENS_SPLIT_OBSSOL=YES
++++ export DO_JEDIOCNVAR=NO
++++ DO_JEDIOCNVAR=NO
++++ export DO_JEDISNOWDA=NO
++++ DO_JEDISNOWDA=NO
++++ export DO_MERGENSST=NO
++++ DO_MERGENSST=NO
++++ [[ .true. = \.\t\r\u\e\. ]]
++++ export DO_STARTMEM_FROM_JEDIICE=YES
++++ DO_STARTMEM_FROM_JEDIICE=YES
++++ export DOHYBVAR=YES
++++ DOHYBVAR=YES
++++ export DOHYBVAR_OCN=NO
++++ DOHYBVAR_OCN=NO
++++ export DOLETKF_OCN=NO
++++ DOLETKF_OCN=NO
++++ export NMEM_ENS=2
++++ NMEM_ENS=2
++++ export SMOOTH_ENKF=NO
++++ SMOOTH_ENKF=NO
++++ export l4densvar=.true.
++++ l4densvar=.true.
++++ export lwrite4danl=.true.
++++ lwrite4danl=.true.
++++ export DO_CALC_INCREMENT=NO
++++ DO_CALC_INCREMENT=NO
++++ export USE_BUILD_GSINFO=YES
++++ USE_BUILD_GSINFO=YES
++++ export BUILD_GSINFO_DIR=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/parm/gsinfo
++++ BUILD_GSINFO_DIR=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/parm/gsinfo
++++ export NMEM_ENS_GFS=30
++++ NMEM_ENS_GFS=30
++++ export NMEM_ENS_GFS_OFFSET=20
++++ NMEM_ENS_GFS_OFFSET=20
++++ export DO_CALC_INCREMENT_ENKF_GFS=NO
++++ DO_CALC_INCREMENT_ENKF_GFS=NO
++++ export DOENKFONLY_ATM=NO
++++ DOENKFONLY_ATM=NO
++++ [[ NO = \Y\E\S ]]
++++ [[ YES = \Y\E\S ]]
++++ export FHMIN_ENKF=3
++++ FHMIN_ENKF=3
++++ export FHMAX_ENKF=9
++++ FHMAX_ENKF=9
++++ export FHMAX_ENKF_GFS=12
++++ FHMAX_ENKF_GFS=12
++++ export FHOUT_ENKF_GFS=3
++++ FHOUT_ENKF_GFS=3
++++ [[ .true. = \.\t\r\u\e\. ]]
++++ export FHOUT=1
++++ FHOUT=1
++++ export FHOUT_ENKF=1
++++ FHOUT_ENKF=1
++++ [[ YES == \N\O ]]
++++ export ENKF_SPREAD=YES
++++ ENKF_SPREAD=YES
++++ [[ enkfgdas == \g\d\a\s ]]
++++ [[ enkfgdas == \e\n\k\f\g\d\a\s ]]
++++ export DO_GSISOILDA=NO
++++ DO_GSISOILDA=NO
++++ export DO_LAND_IAU=.false.
++++ DO_LAND_IAU=.false.
++++ export LSOIL_INCR=2
++++ LSOIL_INCR=2
++++ [[ cycled = \c\y\c\l\e\d ]]
++++ [[ 2024022318 = \2\0\2\4\0\2\2\4\0\6 ]]
++++ [[ NO = \N\O ]]
++++ export IAU_OFFSET=0
++++ IAU_OFFSET=0
++++ export IAU_FHROT=0
++++ IAU_FHROT=0
++++ export IAUFHRS=6,
++++ IAUFHRS=6,
++++ export DO_LAND_IAU=.false.
++++ DO_LAND_IAU=.false.
++++ [[ NO = \N\O ]]
++++ export IAUFHRS_ENKF=6,
++++ IAUFHRS_ENKF=6,
++++ [[ NO == \Y\E\S ]]
++++ export restart_interval_enkfgdas=6
++++ restart_interval_enkfgdas=6
++++ export restart_interval_enkfgfs=6
++++ restart_interval_enkfgfs=6
++++ [[ NO == \Y\E\S ]]
++++ export restart_interval_gdas=6
++++ restart_interval_gdas=6
++++ export DONST=YES
++++ DONST=YES
++++ [[ YES = \Y\E\S ]]
++++ export 'FNTSFA=        '
++++ FNTSFA='        '
++++ export nst_anl=.true.
++++ nst_anl=.true.
++++ export 'INCREMENTS_TO_ZERO='\''liq_wat_inc'\'','\''icmr_inc'\'','\''rwmr_inc'\'','\''snmr_inc'\'','\''grle_inc'\'''
++++ INCREMENTS_TO_ZERO=''\''liq_wat_inc'\'','\''icmr_inc'\'','\''rwmr_inc'\'','\''snmr_inc'\'','\''grle_inc'\'''
++++ export 'INCVARS_ZERO_STRAT='\''sphum_inc'\'','\''liq_wat_inc'\'','\''icmr_inc'\'','\''rwmr_inc'\'','\''snmr_inc'\'','\''grle_inc'\'''
++++ INCVARS_ZERO_STRAT=''\''sphum_inc'\'','\''liq_wat_inc'\'','\''icmr_inc'\'','\''rwmr_inc'\'','\''snmr_inc'\'','\''grle_inc'\'''
++++ export INCVARS_EFOLD=5
++++ INCVARS_EFOLD=5
++++ export netcdf_diag=.true.
++++ netcdf_diag=.true.
++++ export binary_diag=.false.
++++ binary_diag=.false.
++++ export DO_CA=YES
++++ DO_CA=YES
++++ export DO_METP=YES
++++ DO_METP=YES
++++ export DO_FIT2OBS=YES
++++ DO_FIT2OBS=YES
++++ [[ URSA == \h\e\r\a ]]
++++ [[ URSA == \o\r\i\o\n ]]
++++ export FHMAX_FITS=132
++++ FHMAX_FITS=132
++++ [[ 132 -gt 120 ]]
++++ export FHMAX_FITS=120
++++ FHMAX_FITS=120
++++ export DO_FETCH_HPSS=NO
++++ DO_FETCH_HPSS=NO
++++ export DO_FETCH_LOCAL=NO
++++ DO_FETCH_LOCAL=NO
++++ export DO_ARCHCOM=YES
++++ DO_ARCHCOM=YES
++++ export ARCHCOM_TO=hpss
++++ ARCHCOM_TO=hpss
++++ export 'CLIENT_GLOBUS_UUID={{ CLIENT_GLOBUS_UUID }}'
++++ CLIENT_GLOBUS_UUID='{{ CLIENT_GLOBUS_UUID }}'
++++ [[ YES = \Y\E\S ]]
++++ export DO_FIT2OBS=NO
++++ DO_FIT2OBS=NO
++++ export DO_VERFOZN=NO
++++ DO_VERFOZN=NO
++++ export DO_VERFRAD=NO
++++ DO_VERFRAD=NO
++++ export DO_VMINMON=NO
++++ DO_VMINMON=NO
++++ [[ NO == \Y\E\S ]]
++++ export OFFSET_START_HOUR=0
++++ OFFSET_START_HOUR=0
++++ export NUM_SND_COLLECTIVES=9
++++ NUM_SND_COLLECTIVES=9
++++ export MOM6_INTERP_ICS=NO
++++ MOM6_INTERP_ICS=NO
++++ [[ YES == \Y\E\S ]]
++++ [[ YES == \Y\E\S ]]
++++ export ATMINC_GRID=cubed_sphere_grid
++++ ATMINC_GRID=cubed_sphere_grid
++++ echo 'END: config.base'
+END: config.base
+++ true
+++ export err=0
+++ err=0
+++ [[ 0 -ne 0 ]]
+++ for config in "${configs[@]:-''}"
+++ source /scratch5/purged/Wei.Huang/run/gdas/EXPDIR/C96C48_ufs_hybatmDA/config.epos
++++ echo 'BEGIN: config.epos'
+BEGIN: config.epos
++++ source /scratch5/purged/Wei.Huang/run/gdas/EXPDIR/C96C48_ufs_hybatmDA/config.resources epos
+++++ ((  1 != 1  ))
+++++ step=epos
+++++ echo 'BEGIN: config.resources'
+BEGIN: config.resources
+++++ case ${machine} in
+++++ max_tasks_per_node=192
+++++ mem_node_max=360GB
+++++ export max_tasks_per_node
+++++ case ${step} in
+++++ walltime=00:15:00
+++++ [[ C96 == \C\7\6\8 ]]
+++++ [[ C96 == \C\1\1\5\2 ]]
+++++ ntasks=80
+++++ threads_per_task=1
+++++ tasks_per_node=192
+++++ memory=360GB
+++++ is_exclusive=True
+++++ [[ -f /scratch5/purged/Wei.Huang/run/gdas/EXPDIR/C96C48_ufs_hybatmDA/config.resources.URSA ]]
+++++ source /scratch5/purged/Wei.Huang/run/gdas/EXPDIR/C96C48_ufs_hybatmDA/config.resources.URSA
++++++ case ${step} in
+++++ for resource_var in threads_per_task ntasks tasks_per_node NTASKS memory walltime is_exclusive prepost
+++++ run_resource_var=threads_per_task_enkfgdas
+++++ [[ -n '' ]]
+++++ [[ -n 0 ]]
+++++ export threads_per_task
+++++ for resource_var in threads_per_task ntasks tasks_per_node NTASKS memory walltime is_exclusive prepost
+++++ run_resource_var=ntasks_enkfgdas
+++++ [[ -n '' ]]
+++++ [[ -n 0 ]]
+++++ export ntasks
+++++ for resource_var in threads_per_task ntasks tasks_per_node NTASKS memory walltime is_exclusive prepost
+++++ run_resource_var=tasks_per_node_enkfgdas
+++++ [[ -n '' ]]
+++++ [[ -n 0 ]]
+++++ export tasks_per_node
+++++ for resource_var in threads_per_task ntasks tasks_per_node NTASKS memory walltime is_exclusive prepost
+++++ run_resource_var=NTASKS_enkfgdas
+++++ [[ -n '' ]]
+++++ [[ -n '' ]]
+++++ for resource_var in threads_per_task ntasks tasks_per_node NTASKS memory walltime is_exclusive prepost
+++++ run_resource_var=memory_enkfgdas
+++++ [[ -n '' ]]
+++++ [[ -n 0 ]]
+++++ export memory
+++++ for resource_var in threads_per_task ntasks tasks_per_node NTASKS memory walltime is_exclusive prepost
+++++ run_resource_var=walltime_enkfgdas
+++++ [[ -n '' ]]
+++++ [[ -n 0 ]]
+++++ export walltime
+++++ for resource_var in threads_per_task ntasks tasks_per_node NTASKS memory walltime is_exclusive prepost
+++++ run_resource_var=is_exclusive_enkfgdas
+++++ [[ -n '' ]]
+++++ [[ -n 0 ]]
+++++ export is_exclusive
+++++ for resource_var in threads_per_task ntasks tasks_per_node NTASKS memory walltime is_exclusive prepost
+++++ run_resource_var=prepost_enkfgdas
+++++ [[ -n '' ]]
+++++ [[ -n '' ]]
+++++ echo 'END: config.resources'
+END: config.resources
++++ export NEPOSGRP=7
++++ NEPOSGRP=7
++++ [[ .true. == \.\f\a\l\s\e\. ]]
++++ echo 'END: config.epos'
+END: config.epos
+++ true
+++ export err=0
+++ err=0
+++ [[ 0 -ne 0 ]]
+++ source /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/env/URSA.env epos
++++ [[ 1 -ne 1 ]]
++++ step=epos
++++ export 'launcher=srun -l --export=ALL --hint=nomultithread --distribution=block:block'
++++ launcher='srun -l --export=ALL --hint=nomultithread --distribution=block:block'
++++ export 'mpmd_opt=--multi-prog --output=mpmd.%j.%t.out'
++++ mpmd_opt='--multi-prog --output=mpmd.%j.%t.out'
++++ export OMP_STACKSIZE=2048000
++++ OMP_STACKSIZE=2048000
++++ export NTHSTACK=1024000000
++++ NTHSTACK=1024000000
++++ [[ -n 10685753 ]]
++++ ulimit -s unlimited
++++ ulimit -a
+real-time non-blocking time  (microseconds, -R) unlimited
+core file size              (blocks, -c) unlimited
+data seg size               (kbytes, -d) unlimited
+scheduling priority                 (-e) 0
+file size                   (blocks, -f) unlimited
+pending signals                     (-i) 1540561
+max locked memory           (kbytes, -l) unlimited
+max memory size             (kbytes, -m) 377487360
+open files                          (-n) 131072
+pipe size                (512 bytes, -p) 8
+POSIX message queues         (bytes, -q) 819200
+real-time priority                  (-r) 0
+stack size                  (kbytes, -s) unlimited
+cpu time                   (seconds, -t) unlimited
+max user processes                  (-u) 1540561
+virtual memory              (kbytes, -v) unlimited
+file locks                          (-x) unlimited
++++ [[ -n 80 ]]
++++ [[ -n 192 ]]
++++ [[ -n 192 ]]
++++ max_threads_per_task=1
++++ NTHREADSmax=1
++++ NTHREADS1=1
++++ [[ 1 -gt 1 ]]
++++ [[ 1 -gt 1 ]]
++++ APRUN_default='srun -l --export=ALL --hint=nomultithread --distribution=block:block -n 80'
++++ [[ epos = \p\r\e\p ]]
++++ [[ epos = \p\r\e\p\b\u\f\r ]]
++++ [[ epos = \p\r\e\p\_\e\m\i\s\s\i\o\n\s ]]
++++ [[ epos = \w\a\v\e\i\n\i\t ]]
++++ [[ epos = \w\a\v\e\p\r\e\p ]]
++++ [[ epos = \w\a\v\e\p\o\s\t\s\b\s ]]
++++ [[ epos = \w\a\v\e\p\o\s\t\b\n\d\p\n\t ]]
++++ [[ epos = \w\a\v\e\p\o\s\t\b\n\d\p\n\t\b\l\l ]]
++++ [[ epos = \w\a\v\e\p\o\s\t\p\n\t ]]
++++ [[ epos = \w\a\v\e\_\s\t\a\t ]]
++++ [[ epos = \w\a\v\e\_\s\t\a\t\_\p\n\t ]]
++++ [[ epos = \a\t\m\a\n\l\v\a\r ]]
++++ [[ epos = \a\t\m\e\n\s\a\n\l\o\b\s ]]
++++ [[ epos = \a\t\m\e\n\s\a\n\l\s\o\l ]]
++++ [[ epos = \a\t\m\e\n\s\a\n\l\l\e\t\k\f ]]
++++ [[ epos = \a\t\m\e\n\s\a\n\l\f\v\3\i\n\c ]]
++++ [[ epos = \a\e\r\o\a\n\l\v\a\r ]]
++++ [[ epos = \a\e\r\o\a\n\l\g\e\n\b ]]
++++ [[ epos = \a\t\m\a\n\l\f\v\3\i\n\c ]]
++++ [[ epos = \a\n\l\s\t\a\t ]]
++++ [[ epos = \s\n\o\w\a\n\l ]]
++++ [[ epos = \e\s\n\o\w\a\n\l ]]
++++ [[ epos = \m\a\r\i\n\e\b\m\a\t ]]
++++ [[ epos = \m\a\r\i\n\e\a\n\l\v\a\r ]]
++++ [[ epos = \m\a\r\i\n\e\a\n\l\c\h\k\p\t ]]
++++ [[ epos = \m\a\r\i\n\e\a\n\l\e\c\e\n ]]
++++ [[ epos = \m\a\r\i\n\e\a\n\l\l\e\t\k\f ]]
++++ [[ epos = \e\c\e\n\_\f\v\3\j\e\d\i ]]
++++ [[ epos = \a\n\a\l\c\a\l\c\_\f\v\3\j\e\d\i ]]
++++ [[ epos = \a\n\a\l ]]
++++ [[ epos = \a\n\a\l\c\a\l\c ]]
++++ [[ epos = \a\n\a\l\d\i\a\g ]]
++++ [[ epos = \e\d\i\a\g ]]
++++ [[ epos = \o\f\f\l\i\n\e\a\n\l ]]
++++ [[ epos = \s\f\c\a\n\l ]]
++++ [[ epos = \e\o\b\s ]]
++++ [[ epos = \e\u\p\d ]]
++++ [[ epos = \f\c\s\t ]]
++++ [[ epos = \e\f\c\s ]]
++++ [[ epos = \u\p\p ]]
++++ [[ epos = \a\t\m\o\s\_\p\r\o\d\u\c\t\s ]]
++++ [[ epos = \o\c\e\a\n\i\c\e\_\p\r\o\d\u\c\t\s ]]
++++ [[ epos = \e\c\e\n ]]
++++ [[ epos = \e\s\f\c ]]
++++ [[ epos = \e\p\o\s ]]
++++ export NTHREADS_EPOS=1
++++ NTHREADS_EPOS=1
++++ export 'APRUN_EPOS=srun -l --export=ALL --hint=nomultithread --distribution=block:block -n 80 --cpus-per-task=1'
++++ APRUN_EPOS='srun -l --export=ALL --hint=nomultithread --distribution=block:block -n 80 --cpus-per-task=1'
+++ true
+++ export err=0
+++ err=0
+++ [[ 0 -ne 0 ]]
++ source /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/jjob_standard_vars.sh
++++ date +%s
+++ start_time=1774974313
+++ export start_time
++++ date -d@1774974313 -u +%H:%M:%S
+++ _start_time_human=16:25:13
+++ _calling_script=JGDAS_ENKF_POST
+++ echo 'Begin JGDAS_ENKF_POST at 16:25:13'
+Begin JGDAS_ENKF_POST at 16:25:13
+++ declare -x 'PS4=+ $(basename ${BASH_SOURCE[0]:-${FUNCNAME[0]:-"Unknown"}})[${LINENO}]'
+++ jjob_standard_vars.sh[46]export USHglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush
+++ jjob_standard_vars.sh[46]USHglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush
+++ jjob_standard_vars.sh[47]export FIXglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix
+++ jjob_standard_vars.sh[47]FIXglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix
+++ jjob_standard_vars.sh[48]export PARMglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/parm
+++ jjob_standard_vars.sh[48]PARMglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/parm
+++ jjob_standard_vars.sh[49]export SCRIPTSglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/scripts
+++ jjob_standard_vars.sh[49]SCRIPTSglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/scripts
+++ jjob_standard_vars.sh[54]export pid=2245106
+++ jjob_standard_vars.sh[54]pid=2245106
+++ jjob_standard_vars.sh[55]export pgmout=OUTPUT.2245106
+++ jjob_standard_vars.sh[55]pgmout=OUTPUT.2245106
+++ jjob_standard_vars.sh[56]export pgmerr=errfile
+++ jjob_standard_vars.sh[56]pgmerr=errfile
+++ jjob_standard_vars.sh[57]export pgm=
+++ jjob_standard_vars.sh[57]pgm=
+++ jjob_standard_vars.sh[62]export envir=prod
+++ jjob_standard_vars.sh[62]envir=prod
+++ jjob_standard_vars.sh[63]export KEEPDATA=NO
+++ jjob_standard_vars.sh[63]KEEPDATA=NO
+++ jjob_standard_vars.sh[64]export SENDECF=NO
+++ jjob_standard_vars.sh[64]SENDECF=NO
+++ jjob_standard_vars.sh[65]export SENDDBN=NO
+++ jjob_standard_vars.sh[65]SENDDBN=NO
+++ jjob_standard_vars.sh[66]export SENDDBN_NTC=NO
+++ jjob_standard_vars.sh[66]SENDDBN_NTC=NO
+++ jjob_standard_vars.sh[67]export DBNROOT=/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/prod-util-2.1.1-nj6lim7/fakedbn
+++ jjob_standard_vars.sh[67]DBNROOT=/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/oneapi/2024.2.1/prod-util-2.1.1-nj6lim7/fakedbn
+++ jjob_standard_vars.sh[72]export DATA=/scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
+++ jjob_standard_vars.sh[72]DATA=/scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
+++ jjob_standard_vars.sh[78]export cycle=t06z
+++ jjob_standard_vars.sh[78]cycle=t06z
++ JGDAS_ENKF_POST[12]source /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/jjob_shell_setup.sh
+++ jjob_shell_setup.sh[27]export USHglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush
+++ jjob_shell_setup.sh[27]USHglobal=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush
+++ jjob_shell_setup.sh[28]export start_time=1774974313
+++ jjob_shell_setup.sh[28]start_time=1774974313
+++ jjob_shell_setup.sh[29]_calling_script=JGDAS_ENKF_POST
+++ jjob_shell_setup.sh[34]source /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/wait_for_file.sh
++++ wait_for_file.sh[48]declare -xf wait_for_file
+++ jjob_shell_setup.sh[35]source /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/dataroot_com_path.sh
++++ dataroot_com_path.sh[48]declare -xf dataroot_com_path
+++ jjob_shell_setup.sh[36]source /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/timer.sh
++++ timer.sh[28][[ -z '' ]]
++++ timer.sh[29]_GW_TIMER_STACK=()
++++ timer.sh[29]declare -xa _GW_TIMER_STACK
++++ timer.sh[30]_GW_LABEL_STACK=()
++++ timer.sh[30]declare -xa _GW_LABEL_STACK
++++ timer.sh[89]declare -xf tick
++++ timer.sh[90]declare -xf tock
+++ jjob_shell_setup.sh[37]source /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/err_exit.sh
++++ err_exit.sh[81]declare -xf err_exit
+++ jjob_shell_setup.sh[38]shopt -s nullglob
+++ jjob_shell_setup.sh[43]export SHELLOPTS
+++ jjob_shell_setup.sh[47]source /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/setup_data_dir.sh /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
++++ setup_data_dir.sh[15]dir_to_create_=/scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
++++ setup_data_dir.sh[16][[ YES == \Y\E\S ]]
++++ setup_data_dir.sh[17]rm -rf /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
++++ setup_data_dir.sh[19]mkdir -p /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
++++ setup_data_dir.sh[20]cd /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
+++ jjob_shell_setup.sh[50]set -x
+++ jjob_shell_setup.sh[55]source /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/postamble.sh
++++ postamble.sh[53]declare -xf postamble
+++ jjob_shell_setup.sh[57]trap 'postamble 1774974313' EXIT
+++ jjob_shell_setup.sh[63]setpdy.sh
++ setpdy.sh[20]'[' /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889 == /home/Wei.Huang ']'
++ setpdy.sh[25][[ ! t06z =~ t??z ]]
++ setpdy.sh[30]case $# in
++ setpdy.sh[31]dates_before_PDY=7
++ setpdy.sh[32]dates_after_PDY=7
++ setpdy.sh[50]COMDATEROOT=/scratch5/purged/Wei.Huang/run/gdas/COMROOT
++ setpdy.sh[53]'[' -z 20240224 ']'
++ setpdy.sh[57]sed 's/[0-9]\{8\}/20240224/' /scratch5/purged/Wei.Huang/run/gdas/COMROOT/date/t06z
+sed: can't read /scratch5/purged/Wei.Huang/run/gdas/COMROOT/date/t06z: No such file or directory
+++ setpdy.sh[62]finddate.sh 20240224 s-7
++ finddate.sh[19]set +x
++ setpdy.sh[62]DATElne_minus='20240223 20240222 20240221 20240220 20240219 20240218 20240217'
++ setpdy.sh[63]export err=0
++ setpdy.sh[63]err=0
++ setpdy.sh[63]err_chk
++ err_chk[13]'[' -z 0 ']'
++ err_chk[14]'[' 0 -eq 0 ']'
++ err_chk[14]echo ' completed cleanly'
+ completed cleanly
++ err_chk[14]exit
+++ setpdy.sh[65]finddate.sh 20240224 s+7
++ finddate.sh[19]set +x
++ setpdy.sh[65]DATElne_plus='20240225 20240226 20240227 20240228 20240229 20240301 20240302'
++ setpdy.sh[66]export err=0
++ setpdy.sh[66]err=0
++ setpdy.sh[66]err_chk
++ err_chk[13]'[' -z 0 ']'
++ err_chk[14]'[' 0 -eq 0 ']'
++ err_chk[14]echo ' completed cleanly'
+ completed cleanly
++ err_chk[14]exit
++ setpdy.sh[69]'[' -f PDY ']'
+++ setpdy.sh[70]seq 7 -1 1
++ setpdy.sh[70]for d in $(seq $dates_before_PDY -1 1)
++ setpdy.sh[72]echo 'export PDYm7=20240217'
++ setpdy.sh[70]for d in $(seq $dates_before_PDY -1 1)
++ setpdy.sh[72]echo 'export PDYm6=20240218'
++ setpdy.sh[70]for d in $(seq $dates_before_PDY -1 1)
++ setpdy.sh[72]echo 'export PDYm5=20240219'
++ setpdy.sh[70]for d in $(seq $dates_before_PDY -1 1)
++ setpdy.sh[72]echo 'export PDYm4=20240220'
++ setpdy.sh[70]for d in $(seq $dates_before_PDY -1 1)
++ setpdy.sh[72]echo 'export PDYm3=20240221'
++ setpdy.sh[70]for d in $(seq $dates_before_PDY -1 1)
++ setpdy.sh[72]echo 'export PDYm2=20240222'
++ setpdy.sh[70]for d in $(seq $dates_before_PDY -1 1)
++ setpdy.sh[72]echo 'export PDYm1=20240223'
++ setpdy.sh[74]echo 'export PDY=20240224'
+++ setpdy.sh[75]seq 7
++ setpdy.sh[75]for d in $(seq $dates_after_PDY)
++ setpdy.sh[77]echo 'export PDYp1=20240225'
++ setpdy.sh[75]for d in $(seq $dates_after_PDY)
++ setpdy.sh[77]echo 'export PDYp2=20240226'
++ setpdy.sh[75]for d in $(seq $dates_after_PDY)
++ setpdy.sh[77]echo 'export PDYp3=20240227'
++ setpdy.sh[75]for d in $(seq $dates_after_PDY)
++ setpdy.sh[77]echo 'export PDYp4=20240228'
++ setpdy.sh[75]for d in $(seq $dates_after_PDY)
++ setpdy.sh[77]echo 'export PDYp5=20240229'
++ setpdy.sh[75]for d in $(seq $dates_after_PDY)
++ setpdy.sh[77]echo 'export PDYp6=20240301'
++ setpdy.sh[75]for d in $(seq $dates_after_PDY)
++ setpdy.sh[77]echo 'export PDYp7=20240302'
++ setpdy.sh[80]chmod u+x PDY
++ setpdy.sh[82]echo 'Source PDY script to export PDYm7, ..., PDY, ..., PDYp7 variables.'
+Source PDY script to export PDYm7, ..., PDY, ..., PDYp7 variables.
+++ jjob_shell_setup.sh[64]source ./PDY
++++ PDY[1]export PDYm7=20240217
++++ PDY[1]PDYm7=20240217
++++ PDY[2]export PDYm6=20240218
++++ PDY[2]PDYm6=20240218
++++ PDY[3]export PDYm5=20240219
++++ PDY[3]PDYm5=20240219
++++ PDY[4]export PDYm4=20240220
++++ PDY[4]PDYm4=20240220
++++ PDY[5]export PDYm3=20240221
++++ PDY[5]PDYm3=20240221
++++ PDY[6]export PDYm2=20240222
++++ PDY[6]PDYm2=20240222
++++ PDY[7]export PDYm1=20240223
++++ PDY[7]PDYm1=20240223
++++ PDY[8]export PDY=20240224
++++ PDY[8]PDY=20240224
++++ PDY[9]export PDYp1=20240225
++++ PDY[9]PDYp1=20240225
++++ PDY[10]export PDYp2=20240226
++++ PDY[10]PDYp2=20240226
++++ PDY[11]export PDYp3=20240227
++++ PDY[11]PDYp3=20240227
++++ PDY[12]export PDYp4=20240228
++++ PDY[12]PDYp4=20240228
++++ PDY[13]export PDYp5=20240229
++++ PDY[13]PDYp5=20240229
++++ PDY[14]export PDYp6=20240301
++++ PDY[14]PDYp6=20240301
++++ PDY[15]export PDYp7=20240302
++++ PDY[15]PDYp7=20240302
++ JGDAS_ENKF_POST[15]source /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/ush/set_strict.sh
+++ set_strict.sh[7][[ YES == \Y\E\S ]]
+++ set_strict.sh[9]set -eu
+++ set_strict.sh[11]set -o pipefail
++ JGDAS_ENKF_POST[24]export GFS_NCIO=YES
++ JGDAS_ENKF_POST[24]GFS_NCIO=YES
++ JGDAS_ENKF_POST[26]export PREFIX=enkfgdas.t06z.
++ JGDAS_ENKF_POST[26]PREFIX=enkfgdas.t06z.
++ JGDAS_ENKF_POST[28]export LEVS=127
++ JGDAS_ENKF_POST[28]LEVS=127
++ JGDAS_ENKF_POST[33]/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/scripts/exgdas_enkf_post.sh
++ bash[8]'[' -z '' ']'
++ bash[9]case "$-" in
++ bash[12]__lmod_vx=x
++ bash[16]'[' -n x ']'
++ bash[16]set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/apps/lmod/lmod/init/bash)
+Shell debugging restarted
++ bash[197]unset __lmod_vx
+++ exgdas_enkf_post.sh[21]pwd
++ exgdas_enkf_post.sh[21]pwd=/scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
++ exgdas_enkf_post.sh[23]APRUN_EPOS='srun -l --export=ALL --hint=nomultithread --distribution=block:block -n 80 --cpus-per-task=1'
++ exgdas_enkf_post.sh[24]NTHREADS_EPOS=1
++ exgdas_enkf_post.sh[27]LEVS=127
++ exgdas_enkf_post.sh[28]HYBENSMOOTH=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/fix/gsi/global_hybens_smoothinfo.l127.txt
++ exgdas_enkf_post.sh[31]GETATMENSMEANEXEC=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsigensmeanp_smooth.x
++ exgdas_enkf_post.sh[32]GETSFCENSMEANEXEC=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsfcensmeanp.x
++ exgdas_enkf_post.sh[35]PREFIX=enkfgdas.t06z.
++ exgdas_enkf_post.sh[36]FHMIN=009
++ exgdas_enkf_post.sh[37]FHMAX=009
++ exgdas_enkf_post.sh[38]FHOUT=009
++ exgdas_enkf_post.sh[40][[ enkfgdas == \e\n\k\f\g\f\s ]]
++ exgdas_enkf_post.sh[43]NMEM_ENS=2
++ exgdas_enkf_post.sh[45]SMOOTH_ENKF=NO
++ exgdas_enkf_post.sh[46]ENKF_SPREAD=YES
++ exgdas_enkf_post.sh[50]ENKF_SUFFIX=s
++ exgdas_enkf_post.sh[51][[ NO == \N\O ]]
++ exgdas_enkf_post.sh[52]ENKF_SUFFIX=
++ exgdas_enkf_post.sh[57]cpreq /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsfcensmeanp.x /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
++ cpreq[3]cp /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsfcensmeanp.x /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
++ cpreq[4]'[' 0 -ne 0 ']'
++ exgdas_enkf_post.sh[58]cpreq /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsigensmeanp_smooth.x /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
++ cpreq[3]cp /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsigensmeanp_smooth.x /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
++ cpreq[4]'[' 0 -ne 0 ']'
++ exgdas_enkf_post.sh[60]export OMP_NUM_THREADS=1
++ exgdas_enkf_post.sh[60]OMP_NUM_THREADS=1
+++ exgdas_enkf_post.sh[64]seq 1 2
++ exgdas_enkf_post.sh[64]for imem in $(seq 1 "${NMEM_ENS}")
+++ exgdas_enkf_post.sh[65]printf %03i 1
++ exgdas_enkf_post.sh[65]memchar=mem001
++ exgdas_enkf_post.sh[66]declare -x COMIN_ATMOS_HISTORY=/scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA/enkfgdas.20240224/06/mem001/model/atmos/history
+++ exgdas_enkf_post.sh[69]seq 009 009 009
++ exgdas_enkf_post.sh[69]for fhr in $(seq "${FHMIN}" "${FHOUT}" "${FHMAX}")
+++ exgdas_enkf_post.sh[70]printf %03i 9
++ exgdas_enkf_post.sh[70]fhrchar=009
++ exgdas_enkf_post.sh[71]/bin/ln -sf /scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA/enkfgdas.20240224/06/mem001/model/atmos/history/enkfgdas.t06z.sfc.f009.nc sfcf009_mem001
++ exgdas_enkf_post.sh[72]/bin/ln -sf /scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA/enkfgdas.20240224/06/mem001/model/atmos/history/enkfgdas.t06z.atm.f009.nc atmf009_mem001
++ exgdas_enkf_post.sh[64]for imem in $(seq 1 "${NMEM_ENS}")
+++ exgdas_enkf_post.sh[65]printf %03i 2
++ exgdas_enkf_post.sh[65]memchar=mem002
++ exgdas_enkf_post.sh[66]declare -x COMIN_ATMOS_HISTORY=/scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA/enkfgdas.20240224/06/mem002/model/atmos/history
+++ exgdas_enkf_post.sh[69]seq 009 009 009
++ exgdas_enkf_post.sh[69]for fhr in $(seq "${FHMIN}" "${FHOUT}" "${FHMAX}")
+++ exgdas_enkf_post.sh[70]printf %03i 9
++ exgdas_enkf_post.sh[70]fhrchar=009
++ exgdas_enkf_post.sh[71]/bin/ln -sf /scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA/enkfgdas.20240224/06/mem002/model/atmos/history/enkfgdas.t06z.sfc.f009.nc sfcf009_mem002
++ exgdas_enkf_post.sh[72]/bin/ln -sf /scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA/enkfgdas.20240224/06/mem002/model/atmos/history/enkfgdas.t06z.atm.f009.nc atmf009_mem002
++ exgdas_enkf_post.sh[77]declare -rx COMOUT_ATMOS_HISTORY_STAT=/scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA/enkfgdas.20240224/06/ensstat/model/atmos/history
++ exgdas_enkf_post.sh[78][[ ! -d /scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA/enkfgdas.20240224/06/ensstat/model/atmos/history ]]
++ exgdas_enkf_post.sh[79]mkdir -p /scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA/enkfgdas.20240224/06/ensstat/model/atmos/history
+++ exgdas_enkf_post.sh[82]seq 009 009 009
++ exgdas_enkf_post.sh[82]for fhr in $(seq "${FHMIN}" "${FHOUT}" "${FHMAX}")
+++ exgdas_enkf_post.sh[83]printf %03i 9
++ exgdas_enkf_post.sh[83]fhrchar=009
++ exgdas_enkf_post.sh[85]/bin/ln -sf /scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA/enkfgdas.20240224/06/ensstat/model/atmos/history/enkfgdas.t06z.ensmean.sfc.f009.nc sfcf009.ensmean
++ exgdas_enkf_post.sh[86]/bin/ln -sf /scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA/enkfgdas.20240224/06/ensstat/model/atmos/history/enkfgdas.t06z.ensmean.atm.f009.nc atmf009.ensmean
++ exgdas_enkf_post.sh[87][[ NO == \Y\E\S ]]
++ exgdas_enkf_post.sh[94][[ YES == \Y\E\S ]]
++ exgdas_enkf_post.sh[95]/bin/ln -sf /scratch5/purged/Wei.Huang/run/gdas/COMROOT/C96C48_ufs_hybatmDA/enkfgdas.20240224/06/ensstat/model/atmos/history/enkfgdas.t06z.ensspread.atm.f009.nc atmf009.ensspread
++ exgdas_enkf_post.sh[102][[ NO == \Y\E\S ]]
+++ exgdas_enkf_post.sh[106]seq 009 009 009
++ exgdas_enkf_post.sh[106]for fhr in $(seq "${FHMIN}" "${FHOUT}" "${FHMAX}")
+++ exgdas_enkf_post.sh[107]printf %03i 9
++ exgdas_enkf_post.sh[107]fhrchar=009
++ exgdas_enkf_post.sh[109]export pgm=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsfcensmeanp.x
++ exgdas_enkf_post.sh[109]pgm=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsfcensmeanp.x
++ exgdas_enkf_post.sh[110]source prep_step
+++ prep_step[3]'[' -n /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsfcensmeanp.x ']'
+++ prep_step[3]'[' -n OUTPUT.2245106 ']'
+++ prep_step[4]echo /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsfcensmeanp.x
+++ prep_step[7]'[' -f errfile ']'
+++ prep_step[11]export FORT01=0
+++ prep_step[11]FORT01=0
++++ prep_step[12]grep '^FORT[0-9]\{1,\}='
++++ prep_step[12]awk -F= '{print $1}'
++++ prep_step[12]env
+++ prep_step[12]unset FORT01
+++ exgdas_enkf_post.sh[112]basename /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsfcensmeanp.x
++ exgdas_enkf_post.sh[112]srun -l --export=ALL --hint=nomultithread --distribution=block:block -n 80 --cpus-per-task=1 /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889/getsfcensmeanp.x ./ sfcf009.ensmean sfcf009 2
+ 0: 
+ 0: 
+ 0: * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+ 0:      PROGRAM GETSFCENSMEAN HAS BEGUN. COMPILED 2011319.55     ORG: NP25
+ 0:      STARTING DATE-TIME  MAR 31,2026  16:25:17.478   90  TUE   2461131
+ 0: 
+ 0: 
+ 0:   
+ 0:  Command line input
+ 0:   datapath      = ./
+ 0:   filenameout   = ./sfcf009.ensmean
+ 0:   fileprefix    = sfcf009
+ 0:   nanals,rnanals=            2  0.500000000000000     
+ 2:  No files to process for mpi task =            2
+ 4:  No files to process for mpi task =            4
+ 5:  No files to process for mpi task =            5
+ 6:  No files to process for mpi task =            6
+10:  No files to process for mpi task =           10
+12:  No files to process for mpi task =           12
+13:  No files to process for mpi task =           13
+14:  No files to process for mpi task =           14
+15:  No files to process for mpi task =           15
+20:  No files to process for mpi task =           20
+24:  No files to process for mpi task =           24
+25:  No files to process for mpi task =           25
+26:  No files to process for mpi task =           26
+30:  No files to process for mpi task =           30
+31:  No files to process for mpi task =           31
+32:  No files to process for mpi task =           32
+34:  No files to process for mpi task =           34
+36:  No files to process for mpi task =           36
+38:  No files to process for mpi task =           38
+39:  No files to process for mpi task =           39
+41:  No files to process for mpi task =           41
+42:  No files to process for mpi task =           42
+44:  No files to process for mpi task =           44
+45:  No files to process for mpi task =           45
+47:  No files to process for mpi task =           47
+48:  No files to process for mpi task =           48
+50:  No files to process for mpi task =           50
+52:  No files to process for mpi task =           52
+53:  No files to process for mpi task =           53
+57:  No files to process for mpi task =           57
+58:  No files to process for mpi task =           58
+59:  No files to process for mpi task =           59
+60:  No files to process for mpi task =           60
+61:  No files to process for mpi task =           61
+62:  No files to process for mpi task =           62
+63:  No files to process for mpi task =           63
+64:  No files to process for mpi task =           64
+65:  No files to process for mpi task =           65
+66:  No files to process for mpi task =           66
+67:  No files to process for mpi task =           67
+68:  No files to process for mpi task =           68
+69:  No files to process for mpi task =           69
+70:  No files to process for mpi task =           70
+71:  No files to process for mpi task =           71
+72:  No files to process for mpi task =           72
+73:  No files to process for mpi task =           73
+74:  No files to process for mpi task =           74
+75:  No files to process for mpi task =           75
+76:  No files to process for mpi task =           76
+77:  No files to process for mpi task =           77
+78:  No files to process for mpi task =           78
+79:  No files to process for mpi task =           79
+ 3:  No files to process for mpi task =            3
+ 7:  No files to process for mpi task =            7
+ 8:  No files to process for mpi task =            8
+ 9:  No files to process for mpi task =            9
+11:  No files to process for mpi task =           11
+16:  No files to process for mpi task =           16
+17:  No files to process for mpi task =           17
+18:  No files to process for mpi task =           18
+19:  No files to process for mpi task =           19
+21:  No files to process for mpi task =           21
+22:  No files to process for mpi task =           22
+23:  No files to process for mpi task =           23
+27:  No files to process for mpi task =           27
+28:  No files to process for mpi task =           28
+29:  No files to process for mpi task =           29
+33:  No files to process for mpi task =           33
+35:  No files to process for mpi task =           35
+37:  No files to process for mpi task =           37
+40:  No files to process for mpi task =           40
+46:  No files to process for mpi task =           46
+49:  No files to process for mpi task =           49
+51:  No files to process for mpi task =           51
+54:  No files to process for mpi task =           54
+55:  No files to process for mpi task =           55
+56:  No files to process for mpi task =           56
+43:  No files to process for mpi task =           43
+ 0:  computing mean with nemsio= F  sfcio= F  ncio= T
+ 0:  opened netcdf file ./sfcf009.ensmean
+ 0:  writing ens mean acond
+ 0:  writing ens mean albdo_ave
+ 0:  writing ens mean alnsf
+ 0:  writing ens mean alnwf
+ 0:  writing ens mean alvsf
+ 0:  writing ens mean alvwf
+ 0:  writing ens mean aod550
+ 0:  writing ens mean bc_aod550
+ 0:  writing ens mean c0
+ 0:  writing ens mean cd
+ 0:  writing ens mean cduvb_ave
+ 0:  writing ens mean cldfra
+ 0:  writing ens mean cnvprcp
+ 0:  writing ens mean cnwat
+ 0:  writing ens mean cpofp
+ 0:  writing ens mean cprat_ave
+ 0:  writing ens mean cpratb_ave
+ 0:  writing ens mean crain
+ 0:  writing ens mean csdlf
+ 0:  writing ens mean csdsf
+ 0:  writing ens mean csulf
+ 0:  writing ens mean csulftoa
+ 0:  writing ens mean csusf
+ 0:  writing ens mean csusftoa
+ 0:  writing ens mean cwork_aveclm
+ 0:  writing ens mean dconv
+ 0:  writing ens mean dlwrf
+ 0:  writing ens mean dlwrf_ave
+ 0:  writing ens mean dswrf
+ 0:  writing ens mean dswrf_ave
+ 0:  writing ens mean dswrf_avetoa
+ 0:  writing ens mean dtcool
+ 0:  writing ens mean du_aod550
+ 0:  writing ens mean duvb_ave
+ 0:  writing ens mean evbs_ave
+ 0:  writing ens mean evcw_ave
+ 0:  writing ens mean f10m
+ 0:  writing ens mean facsf
+ 0:  writing ens mean facwf
+ 0:  writing ens mean ffhh
+ 0:  writing ens mean ffmm
+ 0:  writing ens mean fldcp
+ 0:  writing ens mean fricv
+ 0:  writing ens mean gflux
+ 0:  writing ens mean gflux_ave
+ 0:  writing ens mean hgt_hyblev1
+ 0:  writing ens mean hpbl
+ 0:  writing ens mean icec
+ 0:  writing ens mean icetk
+ 0:  writing ens mean lhtfl
+ 0:  writing ens mean lhtfl_ave
+ 0:  writing ens mean nbdsf_ave
+ 0:  writing ens mean nddsf_ave
+ 0:  writing ens mean oc_aod550
+ 0:  writing ens mean pevpr
+ 0:  writing ens mean pevpr_ave
+ 0:  writing ens mean prate_ave
+ 0:  writing ens mean prateb_ave
+ 0:  writing ens mean pres_avehcb
+ 0:  writing ens mean pres_avehct
+ 0:  writing ens mean pres_avelcb
+ 0:  writing ens mean pres_avelct
+ 0:  writing ens mean pres_avemcb
+ 0:  writing ens mean pres_avemct
+ 0:  writing ens mean prescnvclb
+ 0:  writing ens mean prescnvclt
+ 0:  writing ens mean pressfc
+ 0:  writing ens mean pwat
+ 0:  writing ens mean qrain
+ 0:  writing ens mean sbsno_ave
+ 0:  writing ens mean sfcr
+ 0:  writing ens mean sfexc
+ 0:  writing ens mean shdmax
+ 0:  writing ens mean shdmin
+ 0:  writing ens mean shtfl
+ 0:  writing ens mean shtfl_ave
+ 0:  writing ens mean sltyp
+ 0:  writing ens mean snoalb
+ 0:  writing ens mean snod
+ 0:  writing ens mean snohf
+ 0:  writing ens mean snowc_ave
+ 0:  writing ens mean soill1
+ 0:  writing ens mean soill2
+ 0:  writing ens mean soill3
+ 0:  writing ens mean soill4
+ 0:  writing ens mean soilm
+ 0:  writing ens mean soilt1
+ 0:  writing ens mean soilt2
+ 0:  writing ens mean soilt3
+ 0:  writing ens mean soilt4
+ 0:  writing ens mean soilw1
+ 0:  writing ens mean soilw2
+ 0:  writing ens mean soilw3
+ 0:  writing ens mean soilw4
+ 0:  writing ens mean spfh2m
+ 0:  writing ens mean spfh_hyblev1
+ 0:  writing ens mean spfhmax_max2m
+ 0:  writing ens mean spfhmin_min2m
+ 0:  writing ens mean ss_aod550
+ 0:  writing ens mean ssrun_acc
+ 0:  writing ens mean su_aod550
+ 0:  writing ens mean sunsd_acc
+ 0:  writing ens mean tcdc_avebndcl
+ 0:  writing ens mean tcdc_aveclm
+ 0:  writing ens mean tcdc_avehcl
+ 0:  writing ens mean tcdc_avelcl
+ 0:  writing ens mean tcdc_avemcl
+ 0:  writing ens mean tcdccnvcl
+ 0:  writing ens mean tg3
+ 0:  writing ens mean tisfc
+ 0:  writing ens mean tmax_max2m
+ 0:  writing ens mean tmin_min2m
+ 0:  writing ens mean tmp2m
+ 0:  writing ens mean tmp_avehct
+ 0:  writing ens mean tmp_avelct
+ 0:  writing ens mean tmp_avemct
+ 0:  writing ens mean tmp_hyblev1
+ 0:  writing ens mean tmpsfc
+ 0:  writing ens mean tprcp
+ 0:  writing ens mean trans_ave
+ 0:  writing ens mean tref
+ 0:  writing ens mean u-gwd_ave
+ 0:  writing ens mean uflx_ave
+ 0:  writing ens mean ugrd10m
+ 0:  writing ens mean ugrd_hyblev1
+ 0:  writing ens mean ulwrf
+ 0:  writing ens mean ulwrf_ave
+ 0:  writing ens mean ulwrf_avetoa
+ 0:  writing ens mean uswrf
+ 0:  writing ens mean uswrf_ave
+ 0:  writing ens mean uswrf_avetoa
+ 0:  writing ens mean v-gwd_ave
+ 0:  writing ens mean vbdsf_ave
+ 0:  writing ens mean vddsf_ave
+ 0:  writing ens mean veg
+ 0:  writing ens mean vflx_ave
+ 0:  writing ens mean vgrd10m
+ 0:  writing ens mean vgrd_hyblev1
+ 0:  writing ens mean w0
+ 0:  writing ens mean watr_acc
+ 0:  writing ens mean wd
+ 0:  writing ens mean weasd
+ 0:  writing ens mean wilt
+ 0:  writing ens mean xs
+ 0:  writing ens mean xt
+ 0:  writing ens mean xtts
+ 0:  writing ens mean xu
+ 0:  writing ens mean xv
+ 0:  writing ens mean xz
+ 0:  writing ens mean xzts
+ 0:  writing ens mean zc
+ 0:  all done!
+ 0: 
+ 0: 
+ 0:      ENDING DATE-TIME    MAR 31,2026  16:25:17.753   90  TUE   2461131
+ 0:      PROGRAM GETSFCENSMEAN HAS ENDED.
+ 0: * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+ 0: *****************RESOURCE STATISTICS*******************************
+ 0: The total amount of wall time                        = 0.275711
+ 0: The total amount of time in user mode                = 0.263639
+ 0: The total amount of time in sys mode                 = 0.159790
+ 0: The maximum resident set size (KB)                   = 466616
+ 0: Number of page faults without I/O activity           = 40920
+ 0: Number of page faults with I/O activity              = 27
+ 0: Number of times filesystem performed INPUT           = 0
+ 0: Number of times filesystem performed OUTPUT          = 41480
+ 0: Number of Voluntary Context Switches                 = 1610
+ 0: Number of InVoluntary Context Switches               = 378
+ 0: *****************END OF RESOURCE STATISTICS*************************
+ 0: 
++ exgdas_enkf_post.sh[112]true
++ exgdas_enkf_post.sh[113]export err=0
++ exgdas_enkf_post.sh[113]err=0
++ exgdas_enkf_post.sh[114][[ 0 -ne 0 ]]
++ exgdas_enkf_post.sh[118]export pgm=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsigensmeanp_smooth.x
++ exgdas_enkf_post.sh[118]pgm=/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsigensmeanp_smooth.x
++ exgdas_enkf_post.sh[119]source prep_step
+++ prep_step[3]'[' -n /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsigensmeanp_smooth.x ']'
+++ prep_step[3]'[' -n OUTPUT.2245106 ']'
+++ prep_step[4]echo /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsigensmeanp_smooth.x
+++ prep_step[7]'[' -f errfile ']'
+++ prep_step[11]export FORT01=0
+++ prep_step[11]FORT01=0
++++ prep_step[12]grep '^FORT[0-9]\{1,\}='
++++ prep_step[12]env
++++ prep_step[12]awk -F= '{print $1}'
+++ prep_step[12]unset FORT01
++ exgdas_enkf_post.sh[121][[ YES == \Y\E\S ]]
+++ exgdas_enkf_post.sh[122]basename /scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsigensmeanp_smooth.x
++ exgdas_enkf_post.sh[122]srun -l --export=ALL --hint=nomultithread --distribution=block:block -n 80 --cpus-per-task=1 /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889/getsigensmeanp_smooth.x ./ atmf009.ensmean atmf009 2 atmf009.ensspread
+ 0: 
+ 0: 
+ 0: * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+ 0:      PROGRAM GETSIGENSMEAN_SMOOTH HAS BEGUN. COMPILED 2011319.55     ORG: NP25
+ 0:      STARTING DATE-TIME  MAR 31,2026  16:25:19.458   90  TUE   2461131
+ 0: 
+ 0: 
+ 0:  computing ensemble spread
+ 0: Command line input for   5 arguments
+ 0:  datapath    = ./
+ 0:  filenameout = ./atmf009.ensmean
+ 0:  fileprefix  = atmf009
+ 0:  nanals      = 2
+ 0:  filenameoutsprd = ./atmf009.ensspread
+ 0:  
+ 4: No files to process for mpi task =     4
+ 6: No files to process for mpi task =     6
+10: No files to process for mpi task =    10
+12: No files to process for mpi task =    12
+13: No files to process for mpi task =    13
+14: No files to process for mpi task =    14
+15: No files to process for mpi task =    15
+20: No files to process for mpi task =    20
+65: No files to process for mpi task =    65
+66: No files to process for mpi task =    66
+67: No files to process for mpi task =    67
+68: No files to process for mpi task =    68
+69: No files to process for mpi task =    69
+70: No files to process for mpi task =    70
+71: No files to process for mpi task =    71
+75: No files to process for mpi task =    75
+77: No files to process for mpi task =    77
+78: No files to process for mpi task =    78
+ 2: No files to process for mpi task =     2
+ 3: No files to process for mpi task =     3
+ 5: No files to process for mpi task =     5
+ 7: No files to process for mpi task =     7
+ 8: No files to process for mpi task =     8
+ 9: No files to process for mpi task =     9
+11: No files to process for mpi task =    11
+16: No files to process for mpi task =    16
+17: No files to process for mpi task =    17
+18: No files to process for mpi task =    18
+19: No files to process for mpi task =    19
+21: No files to process for mpi task =    21
+22: No files to process for mpi task =    22
+23: No files to process for mpi task =    23
+24: No files to process for mpi task =    24
+25: No files to process for mpi task =    25
+26: No files to process for mpi task =    26
+27: No files to process for mpi task =    27
+28: No files to process for mpi task =    28
+29: No files to process for mpi task =    29
+30: No files to process for mpi task =    30
+31: No files to process for mpi task =    31
+32: No files to process for mpi task =    32
+33: No files to process for mpi task =    33
+34: No files to process for mpi task =    34
+35: No files to process for mpi task =    35
+36: No files to process for mpi task =    36
+37: No files to process for mpi task =    37
+38: No files to process for mpi task =    38
+39: No files to process for mpi task =    39
+40: No files to process for mpi task =    40
+41: No files to process for mpi task =    41
+42: No files to process for mpi task =    42
+43: No files to process for mpi task =    43
+44: No files to process for mpi task =    44
+45: No files to process for mpi task =    45
+46: No files to process for mpi task =    46
+47: No files to process for mpi task =    47
+48: No files to process for mpi task =    48
+49: No files to process for mpi task =    49
+50: No files to process for mpi task =    50
+51: No files to process for mpi task =    51
+52: No files to process for mpi task =    52
+53: No files to process for mpi task =    53
+54: No files to process for mpi task =    54
+55: No files to process for mpi task =    55
+56: No files to process for mpi task =    56
+57: No files to process for mpi task =    57
+58: No files to process for mpi task =    58
+59: No files to process for mpi task =    59
+60: No files to process for mpi task =    60
+61: No files to process for mpi task =    61
+62: No files to process for mpi task =    62
+63: No files to process for mpi task =    63
+64: No files to process for mpi task =    64
+72: No files to process for mpi task =    72
+73: No files to process for mpi task =    73
+74: No files to process for mpi task =    74
+76: No files to process for mpi task =    76
+79: No files to process for mpi task =    79
+ 0:  Read netcdf
+ 0:  
+ 0: Read header information from ./atmf009_mem001
+ 0:  ntrunc  =        94
+ 0:  ntrac   =        11
+ 0:  nlevs   =       127
+ 0:  lonb    =       192
+ 0:  latb    =        96
+ 0:  
+ 0: ***WARNING***  hybens_smoothinfo not found - no smoothing
+ 0: dosmooth = F
+ 0:  processing clwmr
+ 0:  clwmr min/max spread  0.0000000E+00  8.5725298E-04
+ 0:  processing delz
+ 0:  delz min/max spread  0.0000000E+00   104.4636    
+ 0:  processing dpres
+ 0:  dpres min/max spread  0.0000000E+00   9.757936    
+ 0:  processing dzdt
+ 0:  dzdt min/max spread  1.6463612E-10  0.2096958    
+ 0:  processing grle
+ 0:  grle min/max spread  0.0000000E+00  2.3919094E-05
+ 0:  processing icmr
+ 0:  icmr min/max spread  0.0000000E+00  2.6057285E-04
+ 0:  processing nccice
+ 0:  nccice min/max spread  0.0000000E+00   9536747.    
+ 0:  processing nconrd
+ 0:  nconrd min/max spread  0.0000000E+00   3765.831    
+ 0:  processing o3mr
+ 0:  o3mr min/max spread  0.0000000E+00  1.2031421E-06
+ 0:  processing omga
+ 0:  omga min/max spread  0.0000000E+00  0.7558963    
+ 0:  processing pressfc
+ 0:  pressfc min/max spread  0.0000000E+00   438.8592    
+ 0:  processing rwmr
+ 0:  rwmr min/max spread  0.0000000E+00  1.8616201E-04
+ 0:  processing snmr
+ 0:  snmr min/max spread  0.0000000E+00  3.5637259E-04
+ 0:  processing spfh
+ 0:  spfh min/max spread  0.0000000E+00  5.2236011E-03
+ 0:  processing tmp
+ 0:  tmp min/max spread  0.0000000E+00   14.16876    
+ 0:  processing ugrd
+ 0:  ugrd min/max spread  0.0000000E+00   19.07515    
+ 0:  processing vgrd
+ 0:  vgrd min/max spread  7.6331190E-07   16.20735    
+ 0:  time to write ens mean on root   1.67128587374464     
+ 0: Write ncio ensemble mean ./atmf009.ensmean iret =     0
+ 0: Write ncio ensemble spread ./atmf009.ensspread iret =     0
+ 0: 
+ 0: 
+ 0:      ENDING DATE-TIME    MAR 31,2026  16:25:21.447   90  TUE   2461131
+ 0:      PROGRAM GETSIGENSMEAN_SMOOTH HAS ENDED.
+ 0: * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+ 0: *****************RESOURCE STATISTICS*******************************
+ 0: The total amount of wall time                        = 1.989060
+ 0: The total amount of time in user mode                = 1.187563
+ 0: The total amount of time in sys mode                 = 0.534535
+ 0: The maximum resident set size (KB)                   = 503908
+ 0: Number of page faults without I/O activity           = 63548
+ 0: Number of page faults with I/O activity              = 56
+ 0: Number of times filesystem performed INPUT           = 0
+ 0: Number of times filesystem performed OUTPUT          = 587200
+ 0: Number of Voluntary Context Switches                 = 7129
+ 0: Number of InVoluntary Context Switches               = 651
+ 0: *****************END OF RESOURCE STATISTICS*************************
+ 0: 
++ exgdas_enkf_post.sh[122]true
++ exgdas_enkf_post.sh[123]export err=0
++ exgdas_enkf_post.sh[123]err=0
++ exgdas_enkf_post.sh[124][[ 0 -ne 0 ]]
++ exgdas_enkf_post.sh[138][[ NO == \Y\E\S ]]
++ exgdas_enkf_post.sh[153][[ NO == \Y\E\S ]]
++ exgdas_enkf_post.sh[166]cd /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
++ exgdas_enkf_post.sh[168]exit 0
++ JGDAS_ENKF_POST[33]true
++ JGDAS_ENKF_POST[34]export err=0
++ JGDAS_ENKF_POST[34]err=0
++ JGDAS_ENKF_POST[35][[ 0 -ne 0 ]]
++ JGDAS_ENKF_POST[46][[ -e OUTPUT.2245106 ]]
++ JGDAS_ENKF_POST[47]cat OUTPUT.2245106
+/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsfcensmeanp.x
+/scratch4/NAGAPE/epic/Wei.Huang/src/global-workflow/exec/getsigensmeanp_smooth.x
++ JGDAS_ENKF_POST[53]cd /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406
++ JGDAS_ENKF_POST[54][[ NO == \N\O ]]
++ JGDAS_ENKF_POST[55]rm -rf /scratch5/purged/Wei.Huang/stmp/gdas/RUNDIRS/C96C48_ufs_hybatmDA/enkfgdas.2024022406/epos.2244889
++ JGDAS_ENKF_POST[58]exit 0
++ JGDAS_ENKF_POST[1]postamble 1774974313
++ postamble.sh[25]set +x
+End JGDAS_ENKF_POST at 16:25:22 with error code 0 (time elapsed: 00:00:09)
++ status=0
++ [[ 0 -ne 0 ]]
++ exit 0
